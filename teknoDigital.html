@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teknologi.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">DIGITAL SIKKERHET</h1>
+            <h3 class="tverrOverskrift">Teknologiforståelse</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="teknologi.html">Hovedside</option>
+                    <option value="teknoWE.html">Word, Excel og strukturert maler</option>
+                    <option value="teknoPc.html">PC og Raspberry PI</option>
+                    <option value="teknoInternett.html">Internettets grunnmur</option>
+                    <option value="teknoDigital.html" selected>Digital sikkerhet</option>
+                    <option value="teknoHMS.html">Rett og plikt på arbeidsplassen</option>
+                    <option value="teknoKreat.html">Digital kreativitet</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">SPORING PÅ NETT OG DIGITAL SIKKERHET</h1>
+            </div>
+
+            <h1 class="miniOverskrift">HVA ER SPORING PÅ NETT?</h1>
+            <p class="tekst">
+                Sporing på nett betyr at nettsteder eller apper følger med på hvilke sider du besøker, hva du klikker på
+                og hvilke produkter du ser på. Det kan skje ved hjelp av informasjonskapsler (cookies), små datafiler
+                som lagres på enheten din. På den måten kan annonser tilpasses seg deg, men det betyr også at selskaper vet
+                mye om deg.
+            </p>
+            <p class="tekst">
+                <strong>Eksempel:</strong> Når du ser annonser for sko på en nettside etter å ha vært inne på en
+                nettbutikk, er det fordi du ble sporet da du besøkte butikken.
+            </p>
+
+            <h1 class="miniOverskrift">HACKERS, & DE FORSKJELLIGE HATTENE</h1>
+            <p class="tekst">
+                Hackere blir ofte delt inn i forskjellige hatter (ikke fysiske hatter, mere for å gruppere dem i seksjoner) avhengig av hva de gjør:
+                <ul>
+                    <li>
+                        <strong>White Hat (hvite hatter):</strong> <br>
+                        <p class="tekst">
+                        Venner av sikkerhet. De hjelper bedrifter med å finne
+                        svakheter i systemene, slik at man kan fikse dem før noen onde hackere utnytter dem.
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <strong>Black Hat (sorte hatter):</strong> <br>
+                        <p class="tekst">
+                        Onde hackere. De bryter seg inn i systemer for egen vinning,
+                        for eksempel å stjele passord, penger eller personlig informasjon. 
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <strong>Grey Hat (grå hatter):</strong> <br>
+                        <p class="tekst">
+                        Ligger mellom hvite og sorte. De kan for eksempel finne en
+                        sårbarhet i et system og varsle bedriften uten å ha fått tillatelse først, noen ganger med krav om
+                        betaling for å fikse det. 
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <strong>Red Hat (røde hatter):</strong> <br>
+                        <p class="tekst">
+                        Aggressive forsvarere. De angriper de sorte hackerne selv i
+                        stedet for å varsle myndigheter, for å stoppe dem. Det er en gråsone, fordi det kan være ulovlig å slå
+                        tilbake. De gjør hva som helst for å ta ned de sorte hattene. 
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <strong>Blue Hat (blå hatter):</strong> <br>
+                        <p class="tekst">
+                        Folk som tester sikkerhetssystemer før de settes i produksjon,
+                        ofte for å sikre at et program eller en app ikke har kjente sårbarheter.  
+                        </p>
+                        
+                    </li>
+                </ul>
+            </p>
+
+            <h1 class="miniOverskrift">HVA ER PHISHING OG TROJANSKHET?</h1>
+            <p class="tekst">
+                <strong>Phishing (fiske etter informasjon):</strong> <br>
+                Når en svindler prøver å lure deg til å gi fra deg
+                brukernavn, passord, kredittkortinfo eller annen personlig informasjon. Dette kan skje via en falsk
+                e-post som ser ut som den kommer fra banken, der du blir bedt om å logge inn på en lenke som egentlig
+                fører til en falsk nettside. <br>
+                <strong>Eksempel:</strong> Du får en e-post som sier: "NOEN HAR LOGGET INN PÅ KONTOEN DIN, ER DETTE DEG? HIV IKKE KLIKK
+                HER." Lenken fører til en nettside som ser ut som nettbanken din, men alt du skriver havner hos
+                svindleren.
+            </p>
+            <p class="tekst">
+                <strong>Trojaner/Trojansk hest:</strong> <br>
+                En type skadelig program som gjemmer seg som noe uskyldig, for
+                eksempel et spill eller en fil du laster ned. Når du åpner programmet, installeres virus eller annen
+                malware i bakgrunnen. <br>
+                <strong>Eksempel:</strong> Du laster ned et gratis PC-spill fra en usikker nettside. Når du installerer
+                spillet, følger det med en trojaner som gir angriperen tilgang til dokumentene dine.
+            </p>
+
+            <h1 class="miniOverskrift">HVA ER MALWARE?</h1>
+            <p class="tekst">
+                Malware er en samlebetegnelse for alle typer skadelig programvare, for eksempel virus, ormer, trojanere
+                og spionprogrammer (spyware). Målet er å skade eller stjele data, overvåke brukere eller ta kontroll
+                over enheten. Noen eksempler på dette er: <br>
+                <ul>
+                    <li>
+                        <strong>Virus:</strong> <br>
+                        Fester seg til legitime programmer og sprer seg til andre filer, ofte når du
+                        åpner eller deler filene.
+                    </li>
+                    <li>
+                        <strong>Ormer:</strong> <br>
+                        Sprer seg automatisk fra en maskin til en annen uten brukerens hjelp, ofte via
+                        nettverk.
+                    </li>
+                    <li>
+                        <strong>Spyware (spionprogram):</strong> <br>
+                        Samler informasjon om deg, for eksempel nettsider du besøker,
+                        uten at du vet det.
+                    </li>
+                    <li>
+                        <strong>Eksempel på malware:</strong> <br>
+                        Et program du laster ned lovlig, men som i bakgrunnen registrerer
+                        tastetrykk (keylogger) og sender brukernavn og passord til en som ikke skal ha det.
+                    </li>
+                </ul>
+            </p>
+
+            <h1 class="miniOverskrift">HURTIG GUIDE: SLIK UNNGÅR DU ANGREP</h1>
+            <p class="tekst">
+                <ul>
+                    <li>
+                        <strong>Sterke og unike passord:</strong> <br>
+                        Bruk lange passord med bokstaver, tall og symboler. Samme
+                        passord skal aldri brukes på flere kontoer.
+                    </li>
+                    <li>
+                        <strong>Passordmanager:</strong> <br>
+                        Lagre passordene i en passordmanager (f.eks. Bit-Warden). Da trenger
+                        du bare å huske ett hovedpassord.
+                    </li>
+                    <li>
+                        <strong>HTTPS:</strong> <br>
+                        Se etter hengelåsen i adressefeltet i nettleseren. Da vet du at
+                        kommunikasjonen mellom deg og nettstedet er kryptert.
+                    </li>
+                    <li>
+                        <strong>VPN:</strong> <br>
+                        Bruk et VPN når du er på offentlige Wi-Fi-nettverk. VPN krypterer all trafikk
+                        mellom enheten din og internett, så ingen på samme nett kan snoke.
+                    </li>
+                    <li>
+                        <strong>Vær kritisk til lenker:</strong> <br>
+                        Ikke klikk på lenker fra ukjente avsendere, selv om det ser
+                        ut som en venn har sendt den. Sjekk alltid e-postadressen eller URL-en før du åpner noe.
+                    </li>
+                    <li>
+                        <strong>Oppdater programvare:</strong> <br>
+                        Installer oppdateringer til operativsystem og apper så snart de
+                        kommer. Oppdateringer fikser ofte sikkerhetshull som angripere kan utnytte.
+                    </li>
+                    <li>
+                        <strong>Aktiver tofaktorautentisering (2FA):</strong> <br>
+                        Der det er mulig, slå på 2FA for ekstra
+                        beskyttelse: du må bekrefte med SMS, app eller e-post i tillegg til passord.
+                    </li>
+                    <li>
+                        <strong>Bruk privatmodus:</strong> <br>
+                        Når du surfer i privat- eller inkognitomodus lagres ikke historikk,
+                        informasjonskapsler eller midlertidige filer. Dette begrenser sporing og gjør at nettsteder ikke husker
+                        deg så lett.
+                    </li>
+                </ul>
+            </p>
+
+            <h1 class="miniOverskrift">HVA JEG HAR LÆRT</h1>
+            <p class="tekst">
+                Jeg har fått innsikt i hvordan digitale medier påvirker oss, både positivt og negativt. Jeg ser nå
+                hvordan sosiale plattformer kan gi et urealistisk bilde av andres liv, og hvilke konsekvenser det kan få
+                for psykisk helse.
+            </p>
+            <p class="tekst">
+                I denne perioden har jeg lært hvor viktig det er med sterke passord og kryptering. Jeg er mye mer
+                oppmerksom på hvordan internettet funker. Jeg bruker nå unike, lange passord og passordmanagere som
+                Bit-Warden, og forstår hvordan HTTPS og VPN beskytter trafikken min, selv på åpne nettverk.
+            </p>
+            <p class="tekst">
+                Jeg har blitt mye mer kritisk til sosiale medier. Jeg er nå ofte mer skeptisk til lenker fra ukjente og
+                bruker privatmodus for å begrense sporing.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="teknoInternett.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1"
+                    id="pil1">
+                    <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">5</p>
+            <a href="teknoHMS.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

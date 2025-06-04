@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teknologi.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">RETT & PLIKT PÅ ARBEIDSPLASSEN</h1>
+            <h3 class="tverrOverskrift">Teknologiforståelse</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="teknologi.html">Hovedside</option>
+                    <option value="teknoWE.html">Word, Excel og strukturert maler</option>
+                    <option value="teknoPc.html">PC og Raspberry PI</option>
+                    <option value="teknoInternett.html">Internettets grunnmur</option>
+                    <option value="teknoDigital.html">Digital sikkerhet</option>
+                    <option value="teknoHMS.html" selected>Rett og plikt på arbeidsplassen</option>
+                    <option value="teknoKreat.html">Digital kreativitet</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">HMS, PERSONVERN & ARBEIDSMILJØLOVEN, HVORFOR ER DET VIKTIG?</h1>
+            </div>
+
+            <h1 class="miniOverskrift">HVA ER HMS?</h1>
+            <p class="tekst">
+                HMS står for helse, miljø og sikkerhet. Det handler om å passe på at alle har det trygt og bra på jobb. <br>
+                <ul>
+                    <li>
+                        <strong>Eksempel på god HMS:</strong>
+                        <p class="tekst">
+                            - Bruke verneutstyr som hjelm og vernesko i et bygg- eller industrilokale.
+                        </p>
+                        <p class="tekst">
+                            - Ha ryddige ganger uten løse ledninger som kan føre til at noen snubler.
+                        </p>
+                    </li>
+                    <li> 
+                        <strong>Eksempel på dårlig HMS:</strong>
+                        <p class="tekst">
+                            - Ignorere slitte elektriske kabler og ikke få dem fikset, som kan føre til brann.
+                        </p>
+                         <p class="tekst">
+                            - Jobbe i høyden uten stillas eller fallsikring, slik at man risikerer å falle.
+                        </p>
+                    </li>
+                </ul>                
+            </p>
+
+            <h1 class="miniOverskrift">HVA ER PERSONVERN?</h1>
+            <p class="tekst">
+                Personvern handler om å beskytte privat informasjon om ansatte og kunder, slik at ingen misbruker eller
+                deler sensitive opplysninger.
+                <ul>
+                    <li>
+                        <strong>Eksempel på godt personvern:</strong>
+                        <p class="tekst">
+                            - Låse kontorene til personalmapper, slik at bare de som trenger det, har tilgang.
+                        </p>
+                        <p class="tekst">
+                            - Ikke skrive passord eller kundelister på lapper som ligger framme.
+                        </p>
+                    </li>
+                    <li> 
+                        <strong>Eksempel på dårlig personvern:</strong>
+                        <p class="tekst">
+                            - Dele kundedata eller ansattes lønnsinformasjon i e-post til hele avdelingen.
+                        </p>
+                         <p class="tekst">
+                            - La pc-skjermen stå åpen med personnummer eller medisinske opplysninger synlig for alle.
+                        </p>
+                    </li>
+                </ul>  
+            </p>
+
+            <h1 class="miniOverskrift">HVA ER ARBEIDSMILJØLOVEN?</h1>
+            <p class="tekst">
+                Arbeidsmiljøloven er en norsk lov som skal sikre trygge og gode arbeidsforhold. Den sier blant annet at
+                arbeidsgiver må sørge for at arbeidsplassen ikke er farlig, og at ansatte har gode pauser og arbeidstid.
+                <ul>
+                    <li>
+                        <strong>Eksempel på god praksis etter arbeidsmiljøloven:</strong>
+                        <p class="tekst">
+                            - Gi ansatte nok pauser i løpet av arbeidsdagen, for eksempel 30 minutter lunsj og korte pauser hver
+                            time.
+                        </p>
+                        <p class="tekst">
+                            - Ha rutiner for å forebygge mobbing og trakassering, slik at ingen opplever ubehag eller stress.
+                        </p>
+                    </li>
+                    <li> 
+                        <strong>Eksempel på brudd på arbeidsmiljøloven:</strong>
+                        <p class="tekst">
+                            - La ansatte jobbe uten pauser i en 12-timersvakt, uten avtale om overtidsbetaling.
+                        </p>
+                         <p class="tekst">
+                            - Ignorere varsler om at noen blir mobbet av kolleger, uten å følge opp saken.
+                        </p>
+                    </li>
+                </ul> 
+            </p>
+
+            <h1 class="miniOverskrift">HVORFOR ER ALT DETTE VIKTIG?</h1>
+            <p class="tekst">
+                Å følge HMS, personvern og arbeidsmiljøloven er viktig for at arbeidsplassen skal være trygg og
+                tillitsfull, som for eksempel:
+                <ul>
+                    <li>
+                        <strong>Trygghet og trivsel:</strong>
+                        <p class="tekst">
+                            Når folk vet at de er beskyttet mot ulykker, helseskader og at
+                            personlige opplysninger er trygge, øker trivselen.
+                        </p>
+                    </li>
+                    <li> 
+                        <strong>Forebygge problemer:</strong>
+                        <p class="tekst">
+                            Ved å ha gode rutiner unngår bedriften skader, rettsaker og store
+                            bøter.
+                        </p>
+                    </li>
+                    <li> 
+                        <strong>Produktivitet:</strong>
+                        <p class="tekst">
+                            Ansatte som har et godt miljø og føler seg respektert, jobber bedre og
+                            sparer tid fordi det er færre konflikter og sykefravær.
+                        </p>
+                    </li>
+                    <li> 
+                        <strong>Eksempler:</strong><br>
+                        <p class="tekst">
+                            - En ansatt som får god opplæring i bruk av maskiner (god HMS) blir mindre skadet, og bedriften unngår
+                            sykedager.
+                        </p>
+                        <p class="tekst">
+                            - Hvis man slurver med personvern og en kunde får sine opplysninger lekket (dårlig personvern), kan
+                            bedriften miste tillit og få økonomiske konsekvenser.
+                        </p>
+                        <p class="tekst">
+                            - Hvis arbeidsgiver ikke følger arbeidsmiljøloven og ansatte føler seg utbrent (dårlig arbeidsmiljø),
+                            kan de slutte eller bli sykemeldt, og bedriften mister dyktige folk.
+                        </p>
+                    </li>
+                </ul>  
+            </p>
+        </div>
+    </main>
+
+
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="teknoDigital.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1"
+                    id="pil1">
+                    <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">6</p>
+            <a href="teknoKreat.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

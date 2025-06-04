@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="YFF.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">CV & SØKNAD</h1>
+            <h3 class="tverrOverskrift">Yrkes Faglig Fordypning</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="YFF.html">Hovedside</option>
+                    <option value="YFFBlogg.html">Blogg</option>
+                    <option value="YFFSøkCV.html" selected>CV og Søknad</option>
+                    <option value="YFFSpill.html">Prosjektoppgave</option>
+                    <option value="YFFPraksis.html">Praksis perioden</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">PROFESJONALITET & PRESANTASJON</h1>
+            </div>
+            <h1 class="miniOverskrift">HVORDAN MAN SKRIVER EN CV OG SØKNAD</h1>
+            <p class="tekst">
+                En CV er en oversikt over utdanning, arbeidserfaring og ferdigheter. Start med navn, kontaktinformasjon,
+                og eventuelt lenke til en portefølje. Deretter skriver du utdanning: skole, studieretning, årstall, osv.
+                Og
+                arbeidserfaring: hvor du har jobbet, stilling, en kort beskrivelse av hva du gjorde og perioden du
+                jobbet der. Legg også inn relevante ferdigheter, for eksempel språk, datakunnskaper eller sertifikater.
+                Hold det ryddig, punktlister er smart og hold teksten kort og presis.
+            </p>
+            <p class="tekst">
+                En søknad er et brev der du forklarer hvorfor du vil ha jobben og hvorfor du passer til stillingen.
+                Start med en hilsen, for eksempel: “Hei (Navn på kontaktperson)" hvis du vet hvem som leser, “Hei”.
+                Skriv en kort innledning der du nevner hvilken stilling du søker på. I hoveddelen forteller du
+                litt om deg selv: utdanning, erfaring og ferdigheter som passer til jobben. Gi eksempler på hva du har
+                gjort tidligere som viser at du kan utføre jobben. Avslutt med at du håper på et intervju, og skriv “Med
+                vennlig hilsen” for å prøve å spille på hjertestrengene, etterfulgt av navnet ditt.
+            </p>
+
+            <h1 class="miniOverskrift">TING MAN BØR HUSKE</h1>
+            <p class="tekst">
+            <ul>
+                <li>
+                    <p class="tekst">
+                        Tilpass alltid CV og søknad til den jobben du søker. Les stillingsutlysningen og bruk noen av de
+                        samme
+                        ordene som står der.
+                    </p>
+                </li>
+                <li>
+                    <p class="tekst">
+                        Sjekk at det ikke er skrivefeil. Be gjerne en venn eller (ver ikke om dette er lovlig i den
+                        voksene verden) AI om å lese over.
+                    </p>
+                </li>
+                <li>
+                    <p class="tekst">
+                        Vær ærlig, men fremhev det som er positivt om deg. Hvis du mangler erfaring, fokuser på hva du
+                        kan lære
+                        raskt og hva du er interessert i.
+                    </p>
+                </li>
+                <li>
+                    <p class="tekst">
+                        Hold layouten ryddig. Bruk enkel skrifttype, like marger og samme stil gjennom hele dokumentet.
+                    </p>
+                </li>
+                <li>
+                    <p class="tekst">
+                        Husk kontaktinformasjon: telefonnummer, e-postadresse (kanksje ikke en e-postadresse som
+                        ladiesman1237).
+                    </p>
+
+                </li>
+                <li>
+                    <p class="tekst">
+                        I søknaden, ikke skriv for mye om alt mulig. Hold det kort, en side er ofte nok.
+                    </p>
+
+                </li>
+                <li>
+                    <p class="tekst">
+                        Vis entusiasme og motivasjon. Arbeidsgiver vil merke om du virker genuint interessert i jobben.
+                    </p>
+                </li>
+            </ul>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="YFFBlogg.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1"
+                    id="pil1">
+                    <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">3</p>
+            <a href="YFFSpill.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

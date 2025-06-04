@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="medie.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">GODOT</h1>
+            <h3 class="tverrOverskrift">Prod. Og historiefortelling</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="medie.html">Hovedside</option>
+                    <option value="medieTic.html">Juleavslutning prosjektet</option>
+                    <option value="medieAfter.html">After Effect's og Photoshop</option>
+                    <option value="medieMotion.html">Stop-Motion</option>
+                    <option value="medieTverr.html">Blender og Unity</option>
+                    <option value="medieInteraktiv.html">Interaktiv historie</option>
+                    <option value="medieGodot.html" selected>Godot</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">KONSEPT OG GJENNOMFØRING</h1>
+            </div>
+
+            <h1 class="miniOverskrift">HVA ER GODOT?</h1>
+            <p class="tekst">
+                Godot er en gratis og åpen spillmotor som du kan bruke til å lage 2D- og 3D-spill. Du kan eksportere
+                spillene til mobil, PC, nettleser og konsoll.
+            </p>
+            <p class="tekst">
+                Det spesielle med Godot er at den har sitt eget språk som heter GDScript. GDScript ligner veldig på
+                Python og er derfor lett å lære, selv om jeg ikke hadde samme opplevelse. Du kan også bruke andre språk som
+                C# (som ligner på Java), C++ eller VisualScript (som har en dra-og-slipp-logikk, for de som ikke vil kode).
+            </p>
+
+            <h1 class="miniOverskrift">FPS SHOOTER</h1>
+            <p class="tekst">
+                Jeg og en annen fikk i oppgave å lage et spill i Godot. Kravet var at spillet måtte ha to funksjoner
+                (bevegelse telte ikke som en av dem) ellers hadde vi stor frihet. Vi ville blande 3D med
+                2D funksjoner, som i spillet DOOM, egentlig hadde vi tenkt å bare kopiere DOOM.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/doom.webp" alt="Bilde fra DOOM-spill">
+            </div>
+
+            <h1 class="miniOverskrift">BEVEGELSE, KLATRE & HOPPE FUNKSJON</h1>
+            <p class="tekst">
+                <strong>Bevegelse:</strong><br>
+                Bevegelse var ikke det vanskligste å få til, men den er det viktigste i et FPS-spill. Jeg fulgte en veiledning
+                på YouTube for å få bevegelsen til å bli god nok. Veiledningen:<br>
+                <a
+                    href="https://www.youtube.com/watch?v=A3HLeyaBCq4&t=327s">https://www.youtube.com/watch?v=A3HLeyaBCq4&t=327s</a>
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/bevegelseGodot.gif" alt="Bevegelseseksempel i Godot">
+            </div>
+
+            <p class="tekst">
+                <strong>FPS:</strong><br>
+                Spillet vårt skulle være inspirert av DOOM, men vi manglet ferdigheter til å lage fiender og avanserte
+                flerverktøy. Derfor valgte vi å gjøre det enklere for oss selv. Vi bruke forskjellige geometriske former som baller,
+                firkanter og sylindere som mål. Når du skyter på dem, blir de røde for å vise at du traff. På den
+                måten føles det litt som DOOM, men uten ekte fiender, mer et warm-up-spill for FPS.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/AimSkytGodot.gif" alt="Sikting og skyting i Godot">
+            </div>
+
+            <p class="tekst">
+                <strong>Klatrefunksjon:</strong><br>
+                For å gjøre spillet mer interessant ville jeg legge til en klatrefunksjon. Vi var usikre på hvordan vi
+                skulle starte, så vi så på flere veiledninger. Jeg brukte spesielt denne tutorialen til å lage
+                koden:<br>
+                <a
+                    href="https://www.youtube.com/watch?v=Tb-R3l0SQdc">https://www.youtube.com/watch?v=Tb-R3l0SQdc</a><br>
+                Det er lurt å følge alle veiledningene fra denne kanalen fordi han forklarer det ganske godt.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/klatreGodot.gif" alt="Klatrefunksjon i Godot">
+            </div>
+
+            <p class="tekst">
+                <strong>Hopp:</strong><br>
+                Hoppefunksjonen er en av de viktigste i videospill, untatt enkelte spill som Elden Ring, Rainbow Six
+                Siege eller Resident Evil der bevegelsen er annerledes. Jeg bygde hoppfunksjonen ved å bruke samme
+                tutorial som bevegelsen.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/hoppGodot.gif" alt="Hoppefunksjon i Godot">
+            </div>
+
+            <h1 class="miniOverskrift">RESULTAT</h1>
+            <p class="tekst">
+                Resultatet ble bedre enn vi trodde det skulle bli. Uten fiender og avanserte funksjoner tenkte jeg at
+                spillet kommer til å ende opp å føles ut som ganske tørt, men det gjorde det ikke. Det er kanskje ikke det beste spillet i verden, men
+                jeg er stolt av det.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/selveSpilletGodot (2).gif" alt="Spillet i aksjon">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="medieInteraktiv.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1"
+                    id="pil1">
+                    <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">7</p>
+            <!-- <a href="medieInteraktiv.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2" id="pil2">
+                <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a> -->
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

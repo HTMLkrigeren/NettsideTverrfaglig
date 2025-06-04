@@ -1,0 +1,321 @@
+
+
+.game {
+    width: 800px;
+    height: 250px;
+    border: 1px solid black;
+    margin: 50px;
+}
+
+.score {
+    position: relative;
+    top: -5px;
+    left: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.player {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    top: 281px;
+    left: 90px;
+    animation: 1s;
+}
+
+.boundsCharacters {
+    width: 220px;
+    height: 320px;
+    background-color: white;  
+    position: absolute;
+    top: 0px;
+    left: 860.6px;
+    z-index: 1000;
+}
+
+.outBounds {
+    width: 60px;
+    height: 320px;
+    background-color: white;  
+    /* border: black 1px solid; */
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    z-index: 1000;
+}
+
+.enemy {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    top: 281px;
+    left: 862px;
+    animation: 5s infinite linear;
+}
+.enemy2 {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    top: 281px;
+    left: 950px;
+    animation: 5s infinite linear;
+}
+.enemy3 {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    top: 281px;
+    left: 900px;
+    animation: 5s infinite linear;
+}
+.enemy4 {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    top: 281px;
+    left: 900px;
+    animation: 5s infinite linear;
+}
+.mimic {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    position: absolute;
+    top: 281px;
+    left: 900px;
+}
+.mimic.jumping {
+    animation: mimicSlide 5s infinite linear, mimicJump 0.5s ease-out;
+}
+.sike {
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+    position: absolute;
+    top: 281px;
+    left: 900px;
+    animation: 5s infinite linear;
+}
+.sikeSlag {
+    width: 20px;
+    height: 20px;
+    border: 1px solid purple;
+    position: absolute;
+    top: 20px;
+    left:   90px;
+    animation: 5s infinite linear;
+}
+
+/*Enemy1 blå*/
+@keyframes enemySlide { /*tatt animasjon 6*/
+    0%{left: 900px;}
+    100%{left: -800px;} 
+}
+@keyframes enemyOppe { /*Tatt animasjon 4*/
+    0%{top: 265px;}
+    0%{left: 900px;}
+    100%{left: -2190px;} 
+    100%{top: 265px;}
+}
+@keyframes enemySlideSkli { /*Tatt animasjon 1*/
+    0%{left: 900px;}
+    100%{left: -800px;} 
+}
+@keyframes enemySlide4 { /*Tatt animasjon 2*/
+    0%{left: 900px;}
+    100%{left: -800px;} 
+}
+@keyframes enemyFall { /*tall animasjon 7*/
+    0%{left: 910px;}
+    0%{top: -520px;}
+    20%{ top: 281px;}
+    20%{left: 510px;}
+    100%{left: -500px;}
+    100%{ top: 281px;}
+}
+@keyframes enemySlide5 { /*Tatt animasjon 5*/
+    0%{top: 265px;}
+    50%{left: 900px;} 
+    50%{top: 265px;}
+    100%{top: 265px;}
+    100%{left: -30px;}
+}
+@keyframes enemySlide6 { /*Tatt animasjon 8*/
+    0%{top: 265px;}
+    0%{left: 900px;}
+    100%{left: -1500px;} 
+    100%{top: 265px;}
+}
+@keyframes enemySlide100 { /*Tatt animasjon 8*/
+    0%{top: 265px;}
+    0%{left: 900px;}
+    100%{left: -800px;} 
+    100%{top: 265px;}
+}
+
+@keyframes enemySlide7 { /*Tatt animasjon 11*/
+    0%{left: 900px;}
+    100%{left: -800px;} 
+}
+
+
+/*Enemy 2 grønn*/
+@keyframes dobbelEnemy { /*Tatt animasjon 5*/
+    0%{left: 900px;}
+    100%{left: -800px;} 
+}
+@keyframes enemySlide2 { /*Tatt animasjon 1*/
+    0%{top: 265px;}
+    40%{left: 900px;}
+    100%{left: -500px;} 
+    100%{top: 265px;}
+}
+@keyframes dobbelEnemy2 { /* tatt animasjon 6 */
+    0%{left: 900px;}
+    20%{left: 900px;}
+    100%{left: -500px;} 
+}
+@keyframes enemy2Oppe {
+    0%{left: 900px;}
+    0%{top: 265px;}
+    50%{left: 900px;}
+    100%{top: 265px;}
+    100%{left: -90px;} 
+}
+@keyframes enemy2Høy { /*tatt animasjon 7*/
+    0%{left: 900px;}
+    45%{left: 900px;}
+    50%{left: 530px;}
+    100%{left: -310px;} 
+}
+
+@keyframes enemy2Slide2 { /*tall animasjin 8*/
+    0%{left: 900px;}
+    20%{left: 900px;}
+    100%{left: -500px;} 
+}
+@keyframes enemy2Slide { /*Tatt animasjon 2*/
+    0%{top: 265px;}
+    40%{left: 900px;}
+    100%{left: -200px;} 
+    100%{top: 265px;}
+}
+
+/*Enemy 3 gul*/
+@keyframes enemy3oppe { /*Tatt animasjon 1*/
+    0%{left: 900px;}
+    0%{top: 265px;}
+    70%{left: 900px;}
+    100%{top: 265px;}
+    100%{left: -50px;} 
+}
+@keyframes enemy3Slide { /*Tatt animasjon 2*/
+    20%{left: 900px;}
+    100%{left: -500px;} 
+}
+@keyframes tredjeEnemy { /*tatt animasjon 6*/
+    30%{left: 900px;}
+    40%{top: 265px}
+    100%{left: -300px;} 
+    100%{top: 265px}
+}
+@keyframes tredjeEnemyOppe { /*Tatt animasjon 5*/
+    0%{top: 265px;}
+    45%{left: 900px;}
+    100%{left: -300px;} 
+    100%{top: 265px;}
+}
+@keyframes enemy3Shock { /*Tatt animasjon 7*/
+    0%{left: 900px;}
+    20%{left: 610px;}
+    50%{left: 510px;}
+    100%{left: -330px;} 
+}
+@keyframes enemy3Oppe2{ /*Tatt animasjon 8*/
+    0%{top: 265px;}
+    0%{left: 900px;}
+    40%{left: 900px;}
+    100%{left: -200px;} 
+    100%{top: 265px;}
+}
+
+
+/*Sike, lilla*/
+@keyframes enemySike{ /*Tatt animasjon 4*/
+    0%{left: 900px;}
+    20%{left: 110px;}
+    40%{left: 110px;}
+    50%{left: 350px;}
+    85%{left: 350px;}
+    100%{left: -50px;}
+}
+@keyframes enemySike2{ /*Tatt animasjon 5*/
+    0%{left: 900px;}
+    10%{left: 110px;}
+    30%{left: 110px;}
+    40%{left: 250px;}
+    65%{left: 250px;}
+    100%{left: -400px;}
+}
+@keyframes enemySike3{ /*Tatt animasjon 9*/
+    10%{left: 900px;}
+    20%{left: 110px;}
+    30%{left: 110px;}
+    40%{left: 250px;}
+    70%{left: 250px;}
+    100%{left: -400px;}
+}
+
+/*sikeSlag*/
+@keyframes sikeSlag {
+    19%{top: 200px;}
+    20%{top: 255px;}
+    40%{top: 255px;}
+    41%{top: -400px;}
+}
+@keyframes sikeSlag2 {
+    9%{top: 200px;}
+    10%{top: 255px;}
+    30%{top: 255px;}
+    31%{top: -400px;}
+}
+@keyframes sikeSlag3 {
+    19%{top: 200px;}
+    20%{top: 255px;}
+    30%{top: 255px;}
+    31%{top: -400px;}
+}
+/*karakter*/
+@keyframes jump {
+    0%{top: 281px;}
+    33%{top: 241px;}
+    77%{top: 241px;}
+    100%{top: 281px;}
+}
+
+@keyframes dukk {
+    0%{top: 281px;}
+    33%{top: 300px;}
+    77%{top: 300px;}
+    100%{top: 281px;}
+}
+
+/*Mimic*/
+@keyframes mimicSlide {
+    0%{left: 900px;}
+    100%{left: -10px;} 
+}
+@keyframes mimicJump {
+    0%{top: 281px;}
+    33%{top: 241px;}
+    77%{top: 241px;}
+    100%{top: 281px;}
+}
+.jumping {
+    animation: mimicJump 1s ease-out;
+}

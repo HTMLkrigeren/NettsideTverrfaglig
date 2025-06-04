@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prog.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+             <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">CASCADING STYLE SHEETS</h1>
+            <h3 class="tverrOverskrift">Programmering</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="prog.html">Hovedside</option>
+                    <option value="progHTML.html">HTML</option>
+                    <option value="progCSS.html" selected>CSS</option>
+                    <option value="progJS.html">JS</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">UTSEENDET</h1>
+            </div>
+            <h1 class="miniOverskrift">HVA ER CSS?</h1>
+            <p class="tekst">
+                CSS står for Cascading Style Sheets. Det er et verktøy som brukes for å bestemme hvordan en nettside skal se ut. HTML lager selve innholdet, som tekst og bilder, mens CSS bestemmer farger, størrelser, skrifttyper, plassering, for å si det mildt, utseendet. Uten CSS ville alle nettsider sett ganske like og kjedelige ut.
+            </p>
+            
+            <h1 class="miniOverskrift">HVORDAN FUNGERER CSS?</h1>
+            <p class="tekst">
+                CSS fungerer ved at man skriver regler for hvordan ulike deler av nettsiden skal styles. For eksempel kan du si at all tekst i overskrifter skal være blå, eller at alle knapper skal være runde og grønne. Disse reglene kobles til HTML-en ved hjelp av klasser, id-er eller navn på elementer, klasser brukes ofte til å definere et element når du skal style det, fordi en class kan brukes på flere elementer, mens en id er unik. CSS-filen kan være en egen fil, eller du kan skrive det rett i HTML-en.
+            </p>
+            
+            <h1 class="miniOverskrift">HVORFOR ER CSS VIKTIG?</h1>
+            <p class="tekst">
+                CSS er viktig fordi det gjør nettsider fine og brukervennlige. Det gjør det også enklere å holde ting ryddig. I stedet for å endre stil på hvert eneste element en og en, kan du gjøre det ett sted og så gjelder det overalt. Det sparer tid og gjør det lettere å endre designet senere.
+            </p>
+            
+            <h1 class="miniOverskrift">NOEN ELEMENTER SOM BRUKES INNENFOR CSS:</h1>
+            <ul>
+                <li>
+                    <strong>Margin og Padding:</strong> <br>
+                    <p class="tekst">
+                        Margin er den tomme plassen utenfor et element. Tenk margin som luft rundt boksen. Hvis du gir et bilde margin: 20px;, vil det være 20 piksler luft fra bildekanten til andre elementer på siden. 
+                        Når det gjelder Padding (fyll): Den tomme plassen inni et element. Hvis du har en boks med tekst og gir den padding: 10px;, vil det være 10 piksler luft mellom teksten og bokskanten. <br>                
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempel på når du ser Margin eller Padding:</strong> 
+                        Når det er god avstand mellom to avsnitt, er det fordi de har margin. Når teksten i en knapp ikke sitter helt inntil kantene, er det padding.
+                    </p>
+                </li>
+                <li>
+                    <strong>Width og Height</strong> <br>
+                    <p class="tekst">
+                        Width er bredden på et element (hvor bredt det er), og height er høyden (hvor høyt det er).
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempel på når du ser Width eller Height:</strong> 
+                        Hvis du har en boks og gir den width: 200px; height: 100px;
+                    </p>
+                    <p class="tekst">
+                        <div class="boks">(Dette er en div, med klassen boks, den har fått bakgrunds farge rød som at du kan se)</div>
+                    </p>
+                    <p class="tekst">
+                        Som du kan se blir boksen 200 piksler bred og 100 piksler høy. Du kan også bruke prosent (width: 50%; betyr halvparten av tilgjengelig bredde).
+                    </p>
+                </li>
+                <li>
+                    <strong>Border og Border-radius:</strong> <br>
+                    <p class="tekst">
+                        Border er en kantlinje rundt et element. Du kan bestemme tykkelse, stil og farge: for eksempel border: 2px solid black; gir en svart kant på 2 piksler. Det kan hende at du ønsker å gjøre kantene runde, dette er da border-radius. border-radius: 5px; runder av hjørnene med 5 piksler. Hvis du setter border-radius: 50%; på en boks som er en firkant, blir den sirkel.     
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempel på border og border-radius:</strong> 
+                        Hvis en knapp har en tynn ramme og litt avrundede hjørner, bruker man border og border-radius, som dette: <br>
+                    </p>
+                    <button style="border: 2px solid black; border-radius: 0px; background-color: red; height: 40px;">Denne har border raduis på 0px</button> 
+                        <button style="border: 2px solid black; border-radius: 10px; background-color: red; height: 40px;">Denne har border raduis på 10px</button> 
+                        <button style="border: 2px solid black; border-radius: 100px; background-color: red; height: 40px; margin-top: 10px;">Denne har border raduis på 100px</button> 
+                    <p class="tekst">
+                        Når det gjelder border kjennerelt: <br>
+                    </p>
+                     <button style="border: 1px solid black; border-radius: 0px; background-color: red; height: 40px;">Denne har border 1px</button> 
+                        <button style="border: 5px solid black; border-radius: 0px; background-color: red; height: 40px;">Denne har border 5px</button> 
+                        <button style="border: 10px solid black; border-radius: 0px; background-color: red; height: 40px; margin-top: 10px;">Denne har border 10px</button>
+                </li>
+                <p class="tekst"></p>
+                <li>
+                    <strong>Font og diverse tekst egenskaper</strong> <br>
+                    <p class="tekst">
+                        <strong>Font-Family:</strong> <br>
+                        Font-family forteller hvilken skrift (font) teksten skal være. For eskmepel: du ønsker at fonten skal være Arial, sans-serif: font-family: Arial, sans-serif;.
+                    </p>
+                    <p class="tekst">
+                        <strong>Font-Size:</strong> <br>
+                        Font-size bestemmer størrelsen på teksten. For eksempel: <span style="font-size: 25px;">font-size: 25px</span>.
+                    </p>
+                    <p class="tekst">
+                        <strong>Font-Weight:</strong> <br>
+                        Font-weight er hvor fet skriften skal være, for eksempel. <span style="font-weight: bold;">font-weight: bold;</span> for fet skrift.
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempler på når de brukes:</strong> <br>
+                        For eksempel overskriften på denne nettsiden, den som ser ut som <span style="text-align: center; color: black; font-size: 20px; font-family: 'Haettenschweiler', sans-serif; font-weight: 400;">DETTE</span>. Font og diverse gir en bedre stil til nettsiden, spesielt teksten.
+                    </p>
+                </li>
+                <li>
+                    <strong>* den universale selektoren</strong> <br>
+                    <p class="tekst">
+                        En stjerne (*) i CSS velger alle elementer på hele siden. Så hvis du ønsker at alt sammen på hele nettsiden din skal ha en farge, så bruker du den universiele selektoren, altså *. Noe lignende er at hvis du vil kun at fargen skal komme på p element for eksempel, skriver du kun p. 
+                    </p>
+                </li>
+                <li>
+                    <strong>Display, flex, justify-content og flex-direction:</strong> <br>
+                    <p class="tekst">
+                        <strong>Display: flex:</strong> <br>
+                        Gjør at et element blir en flex-beholder. Da kan barn (innholdet inni) plassere seg (løse flex-elementer) langs en akse.
+                    </p>
+                    <p class="tekst">
+                        <strong>Flex-Direction:</strong> <br>
+                        Bestemmer om innholdet skal ligge på rad (horisontalt) eller kolonne (vertikalt). flex-direction: row; (på rad) er standard. flex-direction: column; legger elementene i en kolonne.
+                    </p>
+                    <p class="tekst">
+                        <strong>Justify-Content:</strong> <br>
+                        Bestemmer hvordan man fordeler plass langs hovedaksen. Eksempler: <br>
+                        <strong>justify-content: flex-start:</strong> Elementene starter fra venstre/toppen. <br>
+                        <strong>justify-content: center;</strong> Elementene samles i midten. <br>
+                        <strong>justify-content: space-between;</strong> Fordeler elementene jevnt, først til venstre og sist til høyre.
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempler på når de brukes:</strong> <br>
+                        Menyen på siden for eksmepel bruker display: flex, den bruker dette display: flex; flex-direction: column; som gjør at alle linkene går nedover på y aksen.
+                    </p>
+                </li>
+                <li>
+                    <strong>Position:</strong> <br>
+                    <p class="tekst">
+                        <strong>Position:</strong> <br>
+                        Bestemmer hvordan elementet plasseres: <br>
+                    </p>
+                    <p class="tekst">
+                        <strong>static:</strong> standard, følger vanlig flyt <br>
+                        <strong>relative:</strong> flyter som normalt, men du kan justere med top/left, og det tar fortsatt plass i flyten <br>
+                        <strong>absoulute:</strong> fjernet fra vanlig flyt, plasseres i forhold til nærmeste positioned forelder <br>
+                        <strong>fixed:</strong> fiksert i visningsvinduet, scroller ikke med siden
+                    </p>
+                </li>
+                <li>
+                    <strong>Z-index:</strong> <br>
+                    <p class="tekst">
+                        Bestemmer hvem som ligger øverst når elementer overlapper. Høyere tall ligger foran.
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempler på når de brukes:</strong> <br>
+                        Menyen som flyter seg over innholdet, bruker z-index: 10000000002; for å sørge for at den alltid ligger øverst og ikke forsvinner bak andre elementer.
+                    </p>
+                </li>
+                <li>
+                    <strong>Color og Background-Color:</strong> <br>
+                    <p class="tekst">
+                        <strong>Color:</strong> <br>
+                        Fargen på selve teksten. For eksmepel: color: #333333; gir en mørkegrå farge til teksten.
+                    </p>
+                    <p class="tekst">
+                        <strong>Background-Color:</strong> <br>
+                         Fargen bak et element. For eksmepel: background-color: #f0f0f0, gir en veldig hvit men en smak av grå til bakgrunden;.
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempel:</strong> <br>
+                        Mørke bokser med hvit tekst har <span style="background-color: black; color: white;">background-color: black; color: white;</span>
+                    </p>
+                </li>
+                <li>
+                    <strong>Transform og Translate (X, Y):</strong> <br>
+                    <p class="tekst">
+                        <strong>Transform:</strong> <br>
+                        Lar deg rotere, skalere eller flytte et element visuelt. For å flytte bruker man translate. Menyen har faktisk dette, sammen med en hover funskjon som er skrevet mere om seinere.
+                    </p>
+                    <p class="tekst">
+                        <strong>Translate X og Y:</strong> <br>
+                        transform: translateX(10px); flytter 10 piksler til høyre. transform: translateY(-20px); flytter 20 piksler opp. Du kan også kombinere: transform: translate(10px, -20px);.
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempel:</strong> <br>
+                        Hvis et element glir litt frem når du fører musen over, er det en translate som flytter elementet, du kan sjekke det ut med menyen.
+                    </p>
+                </li>
+                <li>
+                    <strong>Transition:</strong> <br>
+                    <p class="tekst">
+                        <strong>Hva er det?</strong> <br>
+                        Gjør at endringer i CSS skjer gradvis over tid i stedet for umiddelbart.
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempel</strong> <br>
+                        Hvis du har en knapp som skal endre bakgrunnsfarge når du holder over den, kan du skrive: background-color: blue; transition: background-color 0.3s; På selve knappen, og så ha en hover: button:hover, med en background-color: lightblue; 
+                    </p>
+                    <p class="tekst">
+                        Da vil knappen gå fra blå til lys blå over 0,3 sekunder når du løfter musepekeren over knappen.
+                    </p>
+                </li>
+                <li>
+                    <strong>Hover:</strong> <br>
+                    <p class="tekst">
+                        <strong>Hva er det?</strong> <br>
+                         En slags kommando som utføres når musen er over et element. Du bruker :hover for å endre utseendet når musen er over.
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempel</strong> <br>
+                        Når lenker skifter farge når du legger musepekeren over dem, gjør man for eksempel:
+                        <a href="https://www.youtube.com/watch?v=uUxChessSEY" target="_blank">LENKE!!!!</a>
+                    </p>
+                    <p class="tekst">
+                        Som du kan se blir lenken oransje farge i fargen når du holder musepekeren over den.
+                    </p>
+                </li>
+                <li>
+                    <strong>Media Query</strong> <br>
+                    <p class="tekst">
+                        <strong>Hva er det?</strong> <br>
+                        Lar deg endre CSS-regler avhengig av skjermstørrelse (eller andre egenskaper).
+                    </p>
+                    <p class="tekst">
+                        <strong>Eksempel</strong> <br>
+                        På mobil vil man kanskje ha mindre tekst eller stabler elementene under hverandre. For eksempel denne nettsiden, hvis du gjør vinduet mindre, så blir menyen tilpasset, bildene mindre, overskriften mindre osv. Annet eksempel:
+                    </p>
+                    <p class="tekst">
+                        @media (max-width: 600px) {
+                        .meny {
+                            display: block;
+                        }
+                        h1 {
+                            font-size: 20px;
+                        }
+                        }
+                    </p>
+                    <p class="tekst">
+                        Dette betyr: Hvis skjermen er maksimum 600 piksler bred, vis menyen blokkvis (under hverandre) og sett overskriften til 20px.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="progHTML.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1" id="pil1">
+                <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">3</p>
+            <a href="progJS.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2" id="pil2">
+                <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html> 

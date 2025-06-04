@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prog.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">JAVA SCRIPT</h1>
+            <h3 class="tverrOverskrift">Programmering</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="prog.html">Hovedside</option>
+                    <option value="progHTML.html">HTML</option>
+                    <option value="progCSS.html">CSS</option>
+                    <option value="progJS.html" selected>JS</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">MUSKLENE</h1>
+            </div>
+
+            <h1 class="miniOverskrift">HVA ER JS?</h1>
+            <p class="tekst">
+                JS står for JavaScript. Det er et programmeringsspråk som gjør nettsider levende. Mens HTML gir
+                nettsiden innhold og CSS bestemmer stil og utseende, lar JavaScript deg lage interaktivitet. Med JS
+                kan du få knapper til å reagere når du klikker, hente data fra andre steder, og
+                oppdatere innhold uten å måtte laste siden på nytt.
+            </p>
+
+            <h1 class="miniOverskrift">HVORDAN FUNGERER JS?</h1>
+            <p class="tekst">
+                JavaScript kjører i nettleseren din. Når du åpner en nettside, leser nettleseren HTML-en, CSS-en, og
+                til slutt JS-koden. JS kan for eksempel lytte etter at du klikker på en knapp, og så kjøre en
+                kode som viser en melding eller endrer tekst på skjermen. JS legger muskler på siden og gjør at du kan
+                klikke, dra, skrive og se endringer uten å laste siden på nytt.
+            </p>
+
+            <h1 class="miniOverskrift">HVORFOR ER JS VIKTIG?</h1>
+            <p class="tekst">
+                JavaScript er viktig fordi det gjør nettsider interaktive og brukervennlige. Uten JS ville alle
+                nettsider vært statiske, du måtte laste siden på nytt for å se noe nytt. Med JS kan du lage ting som
+                bildepresentasjoner, chat-vinduer, sjekke skjema før du sender det, og oppdatere innhold i sanntid.
+                JS brukes også på server siden, så det er veldig allsidig. Det er en stor grunn til at moderne nettsider føles raske og dynamiske.
+            </p>
+            <h1 class="miniOverskrift">NOEN ELEMENTER SOM BRUKES INNENFOR JS:</h1>
+            <ul>
+                <li>
+                    <strong>DOM (Document Object Model):</strong><br>
+                    <p class="tekst">
+                        DOM er en måte nettleseren ser på nettsiden din som et tre av bokser. Hver boks er et
+                        HTML element, som for eksempel en
+                        < div >, < p > eller < button >. Med JavaScript kan du finne disse boksene og endre dem, for eksempel:
+                        bytte tekst, farge eller hva som skjer når du klikker på noe.
+                        </p>
+                    <p class="tekst">
+                        <strong>Eksempel på DOM i bruk:</strong><br>
+                        Hvis du har <code>< h1 id="tittel" >Hei< /h1 >;</code> i HTML, kan du i JS skrive
+                        <code>document.getElementById("tittel").textContent = "Ny overskrift";</code> for å endre
+                        teksten.
+                    </p>
+                </li>
+                <li>
+                    <strong>document.getElementById(#ID):</strong><br>
+                    <p class="tekst">
+                        ID er svært viktig når det gjelder JS, metoden i overskriften henter ett enkelt element fra DOM-en basert på verdi av ID. Hvis du
+                        gir et element id="btn"; i HTML, kan du i JS skrive:
+                    </p>
+                    <pre><code>
+                        let knapp = document.getElementById("btn");
+                    </code></pre>
+                    <p class="tekst">
+                        Nå har du en variabel knapp som representerer akkurat det elementet og kan for
+                        eksempel legge til en konfigurere den som å endre stil og diverse.
+                    </p>
+                </li>
+                <li>
+                    <strong>addEventListener():</strong><br>
+                    <p class="tekst">
+                        Dette fester noe som heter en event listener til et DOM-element, slik at du kan
+                        kjøre en funksjon når noe skjer, for eksempel når brukeren klikker.
+                    </p>
+                    <pre><code>
+                        let knapp = document.getElementById("btn");
+                        knapp.addEventListener("click", function() {
+                            alert("Knappen ble klikket!");
+                        });
+                    </code></pre>
+                    <p class="tekst">
+                        Det betyr: når brukeren klikker på elementet med id="btn", kjører funksjonen inne i
+                        addEventListener.
+                    </p>
+                </li>
+                <li>
+                    <strong>if, else, if else (betingelser):</strong><br>
+                    <p class="tekst">
+                        Betingelser lar programmet sjekke om noe er sant eller usant, og kjøre forskjellige kodestykker via de betingelsene.
+                    </p>
+                    <pre><code>
+                        let alder = 20;
+                        if (alder >= 18) {
+                            console.log("Du er voksen");
+                        } else if (alder >= 13) {
+                            console.log("Du er tenåring");
+                        } else {
+                            console.log("Du er et barn");
+                        }
+                    </code></pre>
+                    <p class="tekst">
+                        Man sjekker først om alder er 18 eller mer. Hvis ikke, ser man om den er 13 eller
+                        mer. Hvis ingen av de er sanne, går man til "else" blokken.
+                    </p>
+                </li>
+                <li>
+                    <strong>for-loops:</strong><br>
+                    <p class="tekst">
+                        En for-løkke kjører samme kode flere ganger, så lenge en betingelse er sann. Brukes
+                        ofte for å gå gjennom en liste eller telle opp.
+                    </p>
+                    <pre><code>
+                        for (let i = 0; i < 5; i++) {
+                            console.log("Teller: " + i);
+                        }
+                    </code></pre>
+                    <p class="tekst">
+                        Her starter i, som er normen når man bruker for-løkker, på 0. Så lenge i < 5 (i er mindre en 5), kjører koden inne i løkken og
+                        øker i med 1 hver gang. Tallene 0 til 4 vises da i konsollen.
+                    </p>
+                </li>
+                <li>
+                    <strong>while-loops:</strong><br>
+                    <p class="tekst">
+                        En while-løkke kjører så lenge en gitt betingelse er sann, den er veldig lik for-løkker, forskjellen fra
+                        for-løkker er at du selv må passe på å oppdatere telle variabelen inni løkken.
+                    </p>
+                    <pre><code>
+                        let teller = 0;
+                        while (teller < 3) {
+                            console.log("Teller er nå: " + teller);
+                            teller++; // øker teller med 1 hver gang
+                        }
+                    </code></pre>
+                    <p class="tekst">
+                        Her starter teller på 0. Løkken kjører så lenge teller < 3, og øker
+                        teller med 1 hver gang. Den skriver 0, 1 og 2.
+                    </p>
+                </li>
+                <li>
+                    <strong>forEach (og andre løkker over arrays):</strong><br>
+                    <p class="tekst">
+                        Hvis du har en liste (array), en array ser sånn her ut [], med flere elementer, kan du bruke forEach for å kjøre
+                        en funksjon som går innom hvert enkelt element.
+                    </p>
+                    <pre><code>
+                        let tall = [2, 4, 6];
+                        tall.forEach(element => {
+                            console.log(element * 2);
+                        });
+                    </code></pre>
+                    <p class="tekst">
+                        Her tar forEach en og en oppføring i tall arrayen (2, 4, 6), kaller
+                        den element, og skriver element * 2 i konsollen (4, 8, 12).
+                    </p>
+                </li>
+                <li>
+                    <strong>API (Application Programming Interface):</strong><br>
+                    <p class="tekst">
+                        En API er en måte å hente data eller sende data til en ekstern tjeneste (server) på. Tenk på det
+                        som en sted der du kan be om informasjon: værdata, personinfo, eller bilder, uten å
+                        måtte vite alt om hvordan serveren bak fungerer.
+                    </p>
+                    <p class="tekst">
+                        I JavaScript bruker man ofte fetch for å kontakte et API og be om data.
+                    </p>
+                </li>
+                <li>
+                    <strong>JSON Filer:</strong><br>
+                    <p class="tekst">
+                        JSON er et enkelt format for å sende data frem og tilbake mellom server og klient. Det ser ut
+                        som JavaScript-objekter, for eksempel:
+                    </p>
+                    <pre><code>
+                        {
+                            "navn": "Kari",
+                            "alder": 25,
+                            "yrke": "Utvikler"
+                        }
+                    </code></pre>
+                    <p class="tekst">
+                        Når du har hentet en JSON-streng fra et API, bruker du metoden response.json() for
+                        å gjøre det om til et JavaScript objekt du kan jobbe med.
+                    </p>
+                </li>
+                <li>
+                    <strong>fetch():</strong><br>
+                    <p class="tekst">
+                        fetch er en innebygd funksjon i nettleseren som lar deg be om noe fra en server,
+                        for eksempel en API. Den returnerer et promise (løfte) som du kan bruke
+                        .then() og .catch() på.
+                    </p>
+                    <pre><code>
+                        fetch("https://api.example.com/data")
+                            .then(response => response.json()) // gjør om rådata til JS-objekt
+                            .then(data => {
+                                console.log(data); // jobber med det vi har hentet
+                            })
+                            .catch(error => {
+                                console.error("Noe gikk galt:", error);
+                            });
+                    </code></pre>
+                    <p class="tekst">
+                        Forklaring steg for steg:<br>
+                        1. fetch("URL") sender en forespørsel til URL-en.<br>
+                        2. Når serveren svarer, får du et response objekt. Men du kan ikke jobbe med det før du bruker 
+                        response.json() som konverterer JSON-teksten til et JS objekt.<br>
+                        3. Når du har JS objektet, kjører du den neste then blokken, hvor du kan bruke
+                        dataene.<br>
+                        4. Hvis noe feiler (for eksempel nettverksfeil), havner du i catch blokken.
+                    </p>
+                </li>
+                <li>
+                    <strong>Arrow-funksjoner (=>):</strong><br>
+                    <p class="tekst">
+                        Arrow funksjoner er en kortere måte å skrive funksjoner på. Den erstatter ordet
+                        function med piler og fjerner behovet for return hvis du bare har en uttrykkslinje.
+                    </p>
+                    <pre><code>
+                        // Tradisjonell funksjon:
+                        function leggeSammen(a, b) {
+                            return a + b;
+                        }
+
+                        // Arrow-funksjon:
+                        let leggeSammen2 = (a, b) => a + b;
+                    </code></pre>
+                    <p class="tekst">
+                        Eksempel med forEach over en array:
+                    </p>
+                    <pre><code>
+                        let tall = [1, 2, 3];
+                        tall.forEach(t => console.log(t * 2));
+                    </code></pre>
+                    <p class="tekst">
+                        Her tar t som er hvert tall i arrayen og skriver t * 2 i konsollen.
+                    </p>
+                </li>
+                <li>
+                    <strong>API-håndtering med fetch og JSON, steg for steg:</strong><br>
+                    <p class="tekst">
+                        1. fetch("https://...") sender forespørselen.<br>
+                        2. .then(response => response.json()) konverterer svaret til JSON.<br>
+                        3. .then(data => { ... }) jobber med JSON-dataene som et JS-objekt/array.<br>
+                        4. .catch(error => { ... }).catch fanger eventuelle feil (nettverksfeil, ugyldig JSON,
+                        osv.).
+                    </p>
+                    <p class="tekst">
+                        Et eksempel:
+                    </p>
+                    <pre><code>
+                        fetch("https://api.example.com/brukere")
+                          .then(response => response.json())
+                          .then(brukere => {
+                            brukere.forEach(b => {
+                              console.log(b.navn, b.alder);
+                            });
+                          })
+                          .catch(err => {
+                            console.error("Noe gikk galt:", err);
+                          });
+                    </code></pre>
+                </li>
+                <li>
+                    <strong>forEach vs for-løkke, hvem er best?:</strong><br>
+                    <p class="tekst">
+                        Både forEach og for-løkker kan brukes til å gå gjennom en liste [array]. 
+                        forEach er ofte mer lesbart når du bare vil utføre en handling på hvert element, 
+                        uten å måtte styre iterasjonen manuelt. Kanskje er det bare meg, men jeg liker forEach, 
+                        fordi det er enklere å bruke. Det kan godt hende at det bare er en vanesak.
+                    </p>
+                    <code><pre>
+                        // For-løkke:
+                        let frukt = ["eple", "banan", "appelsin"];
+                        for (let i = 0; i < frukt.length; i++) {
+                            console.log(frukt[i]);
+                        }
+                        
+                        // forEach:
+                        frukt.forEach(f => console.log(f));
+                    </code></pre> 
+                    <p class="tekst">
+                        Begge metodene skriver ut alle fruktnavnene, men forEach er kortere og enklere å lese.
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+    </main>
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="progCSS.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1"
+                    id="pil1">
+                    <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">4</p>
+            <!-- <a href="progJS.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg> -->
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

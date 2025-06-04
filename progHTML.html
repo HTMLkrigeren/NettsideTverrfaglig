@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prog.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+             <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">HYPERTEXT MARKUP LANGUAGE</h1>
+            <h3 class="tverrOverskrift">Programmering</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="prog.html">Hovedside</option>
+                    <option value="progHTML.html" selected>HTML</option>
+                    <option value="progCSS.html">CSS</option>
+                    <option value="progJS.html">JS</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">SKJELETET</h1>
+            </div>
+            <h1 class="miniOverskrift">HVA ER HTML?</h1>
+            <p class="tekst">
+                HTML står for HyperText Markup Language. Forkortelsen kan virke lang og uforståelig, men tenk på HTML som en struktur som forteller nettleseren (for eksempel Chrome, Firefox eller Safari) hvordan innholdet på en nettside skal organiseres og vises. Med HTML lager man strukturen i dokumentet som overskrifter, avsnitt, lenker og bilder, men man styrer ikke fargene eller utseendet i detalj. Det kommer senere.
+            </p>
+            <h1 class="miniOverskrift">HVORDAN FUNGERER HTML?</h1>
+            <p class="tekst">
+                Når du skriver HTML, bruker du ulike kodeord kalt tags. En tag er merket med vinkelparenteser, for eksempel < h1 > for en overskrift eller < p > for et avsnitt. Alt du plasserer mellom <  p > og < p /> blir tolket som ett avsnitt med tekst, samme gjelder for overskrift. Nettleseren leser hele HTML-filen fra toppen og nedover, finner disse taggene og viser siden deretter. På denne måten forteller du nettleseren nøyaktig hva som er en overskrift, hva som er et avsnitt, hva som er et bilde, og så videre.
+            </p>
+            <h1 class="miniOverskrift">HVORFOR ER HTML VIKTIG?</h1>
+            <p class="tekst">
+                Uten HTML ville ikke en nettside hatt noen struktur. Tenk deg at du skal lese en artikkel i en avis, men alle ordene står i en lang setning uten avsnitt eller overskrifter. Det hadde blitt både tungt å lese og uoversiktlig. På samme måte gjør HTML at innholdet blir delbart opp i biter som er fungerer logisk. Senere kan man bruke CSS til å justere farger, skrifttyper og plassering, og JavaScript for å legge inn interaktivitet. Men bunnlinjen er at det alltid starter med HTML. Det er grunnmuren alle nettsider bygges på.
+            </p>
+            <h1 class="miniOverskrift">NOEN ELEMENTER SOM BRUKES INNENFOR HMTL:</h1>
+            <ul>
+                <li>
+                    <strong>< h1-h6 ></strong> <br>
+                    <p class="tekst">
+                        h1 hele veien til h6 brukes som overskrift, h1 er den aller største varianten, mens h6 er den minste. <br>
+                        Eks: <div class="h1h6">
+                            <h1 style="margin-right: 20px;">STOR</h1> <h6>liten</h6>
+                        </div>
+                    </p>
+                </li>
+                <li>
+                    <strong>< div ></strong> <br>
+                    <p class="tekst">
+                        En boks som brukes for å gruppere andre elementer. Hjelper med å dele opp siden i ulike seksjoner, for eksempel: en meny, et info-område osv.
+                    </p>
+                </li>
+                <li>
+                    <strong>< code ></strong> <br>
+                    <p class="tekst">
+                        Marker kode eller teknisk tekst. Brukes når du vil vise bits av kode (for eksempel HTML, CSS eller JavaScript) på en nettside, slik at det ser ut som kode. <br>
+                        Eks: <code>101100011100101</code>
+                    </p>
+                </li>
+                <li>
+                    <strong>< strong ></strong> <br>
+                    <p class="tekst">
+                        Gir teksten en sterk vekt (ofte fet skrift). Betyr viktig tekst, og legger vekt på at dette skal virke viktig for leseren. <br>
+                        Eks: <strong>Denne teksten har sterk vekt</strong>
+                    </p>
+                </li>
+                <li>
+                    <strong>< p ></strong> <br>
+                    <p class="tekst">
+                        Står for paragraph. En avsnittstagg som pakker inn vanlig tekst, og gir en tydelig avstand over og under teksten. <br>
+                        Eks: Nesten all teksten her er i en p klasse, hvis du ser rundt så ser du ganske tydlig avstand.
+                    </p>
+                </li>
+                <li>
+                    <strong>< b ></strong> <br>
+                    <p class="tekst">
+                        Likt som < p >, gjør teksten fet. Brukes oftere for visuell effekt, mens < strong > forteller også søkemotorer og skjermlesere at teksten er viktig. <br>
+                        Eks: <b>Jeg er lik som p, men jeg er fet.</b>
+                    </p>
+                </li>
+                <li>
+                    <strong>< a ></strong> <br>
+                    <p class="tekst">
+                        Lenketagg. Brukes for å lage en klikkbar lenke til en annen side. for eksempel. <a href="https://www.youtube.com/watch?v=2sBFkfcB8WA" target="_blank">KLIKK PÅ MEGGGG!!!!</a>.
+                    </p>
+                </li>
+                <li>
+                    <strong>< header ></strong> <br>
+                    <p class="tekst">
+                        Toppseksjonen i et dokument. Inneholder gjerne logo, sidetittel eller navigasjonsmeny, den dropdown menyen er i en header, ikke menyen, jeg satt den utenfor med uhell og nå er jeg for lat for å skifte på det.
+                    </p>
+                </li>
+                <li>
+                    <strong>< main ></strong> <br>
+                    <p class="tekst">
+                        Hovedinnholdet på siden. Alt som er hoved tekst, som all teksten du har lest hitil.
+                    </p>
+                </li>
+                <li>
+                    <strong>< footer ></strong> <br>
+                    <p class="tekst">
+                        Bunnseksjonen som ofte inneholder informasjon som opphavsrett, kontaktinfo eller lenker til personvernregler. I mitt tilfelle er det hvor du blar sider.
+                    </p>
+                </li>
+                <li>
+                    <strong>< link ></strong> <br>
+                    <p class="tekst">
+                        Kobler til eksterne ressurser. Ofte brukt i < head > for å koble til en CSS-fil, for eksempel < link rel="stylesheet" href="prog.css" >. Du kan gjøre det samme med JS ved å bruke script src="index.js"
+                    </p>
+                </li>
+                <li>
+                    <strong>< img ></strong> <br>
+                    <p class="tekst">
+                        Viser et bilde på siden. Må ha src for bildeadressen, for eksempel <br> <img src="Bilder/snow man.webp" alt="Beskrivelse" style="width: 100px;">. <br>
+                    </p>
+                </li>
+                <li>
+                    <strong>< ul ></strong> <br>
+                    <p class="tekst">
+                        < ul > er en unordered liste, den lager en punktliste. Alle punktene du ser her nå er inne i en ul
+                    </p>
+                </li>
+                <li>
+                    <strong>< li ></strong> <br>
+                    <p class="tekst">
+                        < li > er en list item, er hvert enkelt punkt inni i denne < ul >-en er en li.
+                    </p>
+                </li>
+                <li>
+                    <strong>hva er det</strong><br>
+                    <p class="tekst">
+                        Pre står for preformatted text. Det betyr at tekst og mellomrom inne i pre blokken vises akkurat slik du skriver det, med linjeskift og mellomrom. Nettleseren beholder all formatering.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="prog.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1" id="pil1">
+                <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">2</p>
+            <a href="progCSS.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2" id="pil2">
+                <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html> 

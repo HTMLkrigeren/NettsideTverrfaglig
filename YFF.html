@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="YFF.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">YRKES FAGLIG FORDYPNING</h1>
+            <h3 class="tverrOverskrift">Tverrfaglig prosjekt</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="YFF.html" selected>Hovedside</option>
+                    <option value="YFFBlogg.html">Blogg</option>
+                    <option value="YFFSøkCV.html">CV og Søknad</option>
+                    <option value="YFFSpill.html">Prosjektoppgave</option>
+                    <option value="YFFPraksis.html">Praksis perioden</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">INNLEDELSE</h1>
+            </div>
+            <p class="tekst">
+                Gjennom Yrkesfaglig fordypning (YFF) har vi vært innom mange ulike temaer. Vi har jobbet ute i praksis,
+                hatt et stort prosjekt som vi brukte mesteparten av tiden på, og lært mye om hvordan arbeidslivet er
+                strukturert og fungerer.
+                YFF er et spennende programfag, men det er også et fag som må tas seriøst. Selvfølgelig gjelder det alle
+                fag, men jeg føler at YFF handler mer om å jobbe fokusert, målrettet og systematisk, heller enn å bare
+                kose seg med faget. Den tanken kommer nok av at vi har brukt mye tid på CV-er og søknader og presentasjoner gjennom året.
+                Prosjektet, derimot, ga meg mer frihet. I tillegg fikk jeg verdifull
+                innsikt i nettverk gjennom praksisperioden, noe jeg allerede var interessert i på grunn av
+                teknologiforståelse.
+            </p>
+            <p class="tekst">
+                Når jeg leser dette høyt, høres det kanskje ut som jeg bare klager, men jeg er faktisk veldig fornøyd
+                med faget. Det var utfordrende til tider, men på forskjellige nivåer, slik at alle kunne nå
+                kompetansemålene uten at det føltes for vanskelig ut.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="side">
+            <!-- <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1" id="pil1">
+                <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a> -->
+            <p class="sideTall">1</p>
+            <a href="YFFBlogg.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

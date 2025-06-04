@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="medie.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">INTERAKTIV HISTORIE</h1>
+            <h3 class="tverrOverskrift">Prod. Og historiefortelling</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="medie.html">Hovedside</option>
+                    <option value="medieTic.html">Juleavslutning prosjektet</option>
+                    <option value="medieAfter.html">After Effect's og Photoshop</option>
+                    <option value="medieMotion.html">Stop-Motion</option>
+                    <option value="medieTverr.html">Blender og Unity</option>
+                    <option value="medieInteraktiv.html" selected>Interaktiv historie</option>
+                    <option value="medieGodot.html">Godot</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">HVORDAN DET FUNKER</h1>
+            </div>
+
+            <h1 class="miniOverskrift">HVA ER EN INTERAKTIV HISTORIE</h1>
+            <p class="tekst">
+                En interaktiv historie er en fortelling der leseren eller spilleren selv styrer handlingen med valg
+                underveis. I en vanlig historie er alt bestemt på forhånd, inkludert slutten. I en interaktiv historie
+                kan du velge forskjellige veier og få forskjellige slutninger, avhengig av hva du velger.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/interaktivHistorieEksempel.png" alt="Eksempel på interaktiv historie">
+            </div>
+            <p class="tekst">
+                På bildet ser du at valgene du tar påvirker hva som skjer. Velger du vei 2 i stedet for vei 1, mister du
+                tilgang til slutt 1, men nye muligheter åpner seg, for eksempel slutt 4.
+            </p>
+
+            <h1 class="miniOverskrift">IDEEN BAK DET</h1>
+            <p class="tekst">
+                Vi skulle lage en interaktiv historie i appen Twine. Bildet over er et eksempel laget i Twine. Twine er
+                ganske enkelt: du trykker på New for å lage en ny boks (passasje), og den boksen du starter med er der
+                spillet begynner. Ved å bruke litt kode som ligner på JavaScript kan du lage livssystem, sjansebasert
+                generator osv.  
+            </p>
+            <p class="tekst">
+                Jeg ville lage en sjansebasert historie i stedet for en der alt er helt bestemt. Jeg ønsket at spilleren
+                skulle lete etter en utgang og prøve å unngå et monster.
+            </p>
+
+            <h1 class="miniOverskrift">MONSTERFUNKSJONEN</h1>
+            <p class="tekst">
+                Jeg ønsket at spillet skulle ha litt vanskelighetsgrad, men siden alt er basert på sjanser, kunne det
+                føles urettferdig om du døde med en gang uten å få utforske. Derfor hadde jeg to valg:
+            </p>
+            <ul>
+                <li>
+                    1. Sjanse for at monsteret er i neste rom var lav, slik at det blir rettferdig og mulig å spille
+                    videre.
+                </li>
+                <li>
+                    2. Gi spilleren et våpen.
+                </li>
+            </ul>
+            <p class="tekst">
+                Jeg valgte det andre alternativet. I stedet for en pistol lagde jeg et lyssystem basert på hvor mange
+                batterier du hadde. Spillet forteller deg hvor mange batterier du har, og gir deg et valg:
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/InteraktivHistorieSkrem.gif" alt="Skremme monsteret med lykt">
+            </div>
+            <p class="tekst">
+                Spillet sier at du har 3 batterier igjen. Du kan velge å skremme vekk monsteret, som bruker ett batteri,
+                eller å løpe.
+                Hvis du skremmer vekk monsteret, blir du i rommet og kan lete etter materialer som kan hjelpe deg
+                videre.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/InteraktivHistorieLøp.gif" alt="Løpe fra monsteret">
+            </div>
+            <p class="tekst">
+                Hvis du vil spare batteriene, kan du velge å løpe. Har du ingen batterier igjen, må du løpe. Da er det
+                stor sjanse for at du mister et liv og blir sendt til et tilfeldig sted i spillet. Kanskje du er heldig
+                og unnslipper, men det er også en sjanse for at monsteret følger etter deg.
+            </p>
+
+            <h1 class="miniOverskrift">RESSURSER OG INVENTORY-FUNKSJON</h1>
+            <p class="tekst">
+                Når du bruker lommelykten eller mister et liv, er det fint å ha en sjanse til å få det tilbake. Derfor
+                har jeg en loot funksjon. Du kan lete i skap, under senger eller andre letbare steder for å finne ekstra
+                liv eller batterier, og kanskje også en sjanse til å møte monsteret. Loot funksjonen sjekker hvor mange
+                batterier og liv du har. Hvis du nettopp mistet et liv, vil verdien være lavere, og sjansen for at liv
+                spawner er større. Det samme gjelder for batteri.
+            </p>
+            <p class="tekst">
+                Hvis du allerede har mer enn 2 av noe (batteri eller liv), er det maks, og det vil ikke spawne mer før du
+                mister det igjen.
+                <strong>Et eksempel:</strong>
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/lootInteraktivHistorie.gif" alt="Loot eksempel">
+            </div>
+            <p class="tekst">
+                Her spawnte loote på grunn av at jeg hadde ingen batterier.
+            </p>
+
+            <h1 class="miniOverskrift">TOKEN-BASERT POENGSYSTEM</h1>
+            <p class="tekst">
+                Et problem var at spilleren kunne misbruke loot-mekanismen. Hvis du hadde 1 batteri, kunne du loote
+                samme skap flere ganger og få flere batterier uten å utforske videre.
+                For å løse dette laget jeg et tokenbasert system.
+            </p>
+            <p class="tekst">
+                Hvert loot-område i spillet har en token som starter på 0. Når du finner et batteri eller liv i det
+                området, øker tokenen med 1, og det spawner ikke mer loot der. Den eneste måten å få loot der igjen, er
+                å besøke et annet loot-område først. Da nullstilles tokenen tilbake, og du kan loote det opprinnelige
+                området på nytt.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/token.png" alt="Token-basert system">
+            </div>
+            <p class="tekst">
+                Hvis du vil prøve spillet eller laste det ned:
+            </p>
+            <div class="nedlastingen">
+                <a href="Spill/Prod. Og historiefortelling - historie .zip" download class="downloadBtn">
+                    <svg class="iconDownload" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 17l4-5h-3V4h-2v8H8l4 5zm8 2H4v2h16v-2z" />
+                    </svg>
+                    <span class="btnText">Last ned</span>
+                </a>
+                <a href="Spill/Prod. Og historiefortelling - historie .html" class="downloadBtn" target="_blank"
+                    rel="noopener">
+                    <p class="spillIkon">🕹️</p>
+                    <span class="btnText">Spill</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="medieTverr.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1"
+                    id="pil1">
+                    <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">6</p>
+            <a href="medieGodot.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

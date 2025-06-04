@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hovedSide.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+             <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+        </div>
+    </div> -->
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">POSJEKTER & ERFARINGER</h1>
+            <h3 class="tverrOverskrift">Tverrfaglig prosjekt</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="index.html" selected>Hovedside</option>
+                    <option value="medie.html">Prod. Historiefortelling</option>
+                    <option value="prog.html">Programmering</option>
+                    <option value="YFF.html">Yrkes faglig fordypning</option>
+                    <option value="teknologi.html">Teknologiforståelse</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">INTRO</h1>
+            </div>
+            <p class="tekst">
+                Velkommen. Dette er en nettside som har omtrent alt jeg har lært i programfagene mine. Her finner du
+                informasjon om prosjektene jeg har gjennomført, samt en oversikt over verktøyene og begrepene jeg har
+                brukt, alt fra nettverkskonsepter til redigeringsverktøy. Hvis du trenger hjelp med navigasjon, finner
+                du
+                hjelp nederst i venstre hjørne.
+            </p>
+            <h1 class="miniOverskrift">EGEN VURDERING:</h1>
+            <p class="tekst">
+            <ul>
+                <li>
+                    <strong>Hvordan har innsatsen min vært:</strong>
+                    <p class="tekst">
+                        Jeg mener at innsatsen min har vært ganske høy. Jeg har jobbet mye med dette på skolen, og enda
+                        mer i fritiden.
+                    </p>
+                </li>
+                <li>
+                    <strong>Hva er bra med nettsiden:</strong>
+                    <p class="tekst">
+                        Jeg føler at nettsiden er godt strukturert. Som jeg har nevnt tidligere, har jeg jobbet hardt
+                        for å få alt til å fungere slik jeg så det for meg. Alt som finnes her er nøye gjennomtenkt, til
+                        og med fargene.
+                    </p>
+                </li>
+                <li>
+                <strong>Hva kunne vært bedre:</strong>
+                <p class="tekst">
+                    Alt kan alltid forbedres, men jeg er spesielt misfornøyd med delen om Teknologiforståelse. Da jeg
+                    jobbet med den, hadde jeg svært begrenset tid igjen, så den ble laget i et hast verk. Derfor er jeg
+                    ikke fornøyd med teksten, jeg føler at den kunne ha vært mye bedre.
+                </p>
+                </li>
+                <li>
+                    <strong>Hva burde vi (som lærere) gjort for at prosjektet/oppgaven hadde vært enda bedre:</strong>
+                    <p class="tekst">
+                        Hadde vi hatt mer tid, ville det vært en ting som kunne ha gjort prosjektet enda bedre. Jeg vet
+                        at vi hadde god tid, men jeg følte likevel at det ikke var nok. Jeg måtte jobbe mye i fritiden
+                        for å få nettsiden ferdig, og det skyldtes ikke bare på kodingen, det var teksten som var værst.
+                        Vi skal trekke frem ting vi er stolte av og mye av det vi har gjort gjennom hele semesteret, det
+                        er mye info.
+                    </p>
+                </li>
+
+                </li>
+            </ul>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div>
+        <!-- <div class="side">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1" id="pil1">
+                <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">1</p>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2" id="pil2">
+                <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div> -->
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

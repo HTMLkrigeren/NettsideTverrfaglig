@@ -1,0 +1,13 @@
+# Ignorer store filer og byggefiler
+*.mp4
+*.exe
+node_modules/
+dist/
+build/
+*.log
+
+# Ignorer IDE‐ og systemfiler
+.vscode/
+*.tmp
+Thumbs.db
+.DS_Store

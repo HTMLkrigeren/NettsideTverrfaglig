@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="medie.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">STOP-MOTION MAT LAGING</h1>
+            <h3 class="tverrOverskrift">Prod. Og historiefortelling</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="medie.html">Hovedside</option>
+                    <option value="medieTic.html">Juleavslutning prosjektet</option>
+                    <option value="medieAfter.html">After Effect's og Photoshop</option>
+                    <option value="medieMotion.html" selected>Stop-Motion</option>
+                    <option value="medieTverr.html">Blender og Unity</option>
+                    <option value="medieInteraktiv.html">Interaktiv historie</option>
+                    <option value="medieGodot.html">Godot</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">UTGANGSPUNKTET, ENDRING & RESULTAT</h1>
+            </div>
+            <h1 class="miniOverskrift">HVA ER STOP-MOTION?</h1>
+            <p class="tekst">
+                Stop-motion er en animasjonsteknikk der man tar bilder ett og ett, mens objektet eller figurene flyttes
+                litt mellom hvert bilde. Avhengig av hvor jevn bevegelsen skal være, tar man for eksempel 12-24 bilder
+                per sekund. Når man da spiller av bildene i rask rekkefølge, ser det ut som om ting faktisk beveger seg.
+                Klassiske eksempler er dukke eller claymation, der man former figurer av plastelina eller lignende og
+                justerer dem for hver ramme.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/pingu-clay.gif">
+            </div>
+            <h1 class="miniOverskrift">SELVVALGT OPPGAVE</h1>
+            <p class="tekst">
+                Oppgaven var å lage en stop-motion video på minst 30 sekunder og maks 3 minutter. Jeg og en annen var i
+                gruppe sammen, og vi tenkte først å lage en slags slåsskampscene hvor jeg skulle være en innbruddstyv 
+                og det skulle være ordentlig sloss kamp med magi, pistoler osv.
+            </p>
+            <h1 class="miniOverskrift">PLANEN VAR BEDRE ENN FERDIGHETENE</h1>
+            <p class="tekst">
+                Vi ble ganske lei av ideen om slåsskamp ganske raskt, fordi vi begge innså at vi overtenkte alt og planla noe som aldri
+                kommer til å fungere. Så vi gjorde det mest logiske, fant på en enklere ide.
+                Vi endte opp med å lage en stop-motion video der maten lager seg selv. Det var mye enklere enn å lage
+                en hel slåsskamp over flere dager.
+            </p>
+            <h1 class="miniOverskrift">RESULTAT</h1>
+            <p class="tekst">
+                Jeg var ikke spesielt fornøyd med resultatet, men det er heller ikke helt krise. Det ser ikke
+                nødvendigvis pent ut for øyet, kanskje fordi det går for fort i noen partier og altfor sakte i andre.
+            </p>
+            <video controls src="Videoer/Matlaging.mp4" class="BB"></video>
+            <div class="nedlastingen">
+                <a href="Videoer/Matlaging.mp4" download class="downloadBtn">
+                    <svg class="iconDownload" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 17l4-5h-3V4h-2v8H8l4 5zm8 2H4v2h16v-2z" />
+                    </svg>
+                    <span class="btnText">Last ned</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="MedieAfter.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1"
+                    id="pil1">
+                    <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">4</p>
+            <a href="medieTverr.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

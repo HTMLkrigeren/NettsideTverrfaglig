@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teknologi.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">PC & RASPBERRY PI</h1>
+            <h3 class="tverrOverskrift">Teknologiforståelse</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="teknologi.html">Hovedside</option>
+                    <option value="teknoWE.html">Word, Excel og strukturert maler</option>
+                    <option value="teknoPc.html" selected>PC og Raspberry PI</option>
+                    <option value="teknoInternett.html">Internettets grunnmur</option>
+                    <option value="teknoDigital.html">Digital sikkerhet</option>
+                    <option value="teknoHMS.html">Rett og plikt på arbeidsplassen</option>
+                    <option value="teknoKreat.html">Digital kreativitet</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift"></h1>
+            </div>
+            <h1 class="miniOverskrift">GAMMEL PC-LAB</h1>
+            <p class="tekst">
+                Jeg var ikke sikker på om jeg skulle ta dette med eller la det være. Nettsiden handler om det jeg har
+                lært mens jeg har gått på 1IMA, men jeg tror ikke jeg lærte altfor mye av akkurat dette. Jeg og en annen
+                klassekamerat skulle lage en PC av gamle deler som lå på lageret på skolen: prosessor, RAM, lagring osv.
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/LapPc.jpg">
+            </div>
+            <p class="tekst">
+                Som du kan se, ser den flott ut, såpass flott at den ikke fungerer. Vi prøvde alt mulig, men ingenting
+                fungerte. PC-en skrudde seg på, men ville ikke vise noe på skjermen. Jeg lærte mye om hva delene var,
+                men fikk ikke prøve det ut i praksis.
+            </p>
+            <h1 class="miniOverskrift">PC DELER SINE FUNSKJONER</h1>
+            <p class="tekst">
+                Den listen under her er det som er nødvendig for at en PC skal fungere, altså delene du trenger:
+            </p>
+            <p class="tekst">
+                1. Prosessor (CPU): Dette er hjernen i PC-en. Den utfører alle beregninger og kjører programmene.
+            </p>
+            <p class="tekst">
+                2. Minne (RAM): Et midlertidig lagringssted som lar PC-en jobbe raskt med flere ting samtidig. Når du
+                åpner programmer, bruker de RAM.
+            </p>
+            <p class="tekst">
+                3. Lagring (Harddisk eller SSD): Her ligger alt som skal lagres lenge: operativsystem, programmer og
+                filer.
+            </p>
+            <p class="tekst">
+                4. Hovedkort (Motherboard): En stor kretskortplattform (Motherboard) som kobler alle delene sammen slik
+                at de kan snakke med hverandre.
+            </p>
+            <p class="tekst">
+                5. Strømforsyning (PSU): Gir strøm til alle delene i PC-en. Uten strømforsyningen får ingen av delene
+                strøm og kan ikke fungere.
+            </p>
+            <p class="tekst">
+                6. Skjermkort (GPU): Ansvarlig for å vise bilder og grafikk på skjermen. Viktig for spill, video og
+                design. Noen PC-er har skjermkort innebygd i prosessoren.
+            </p>
+            <p class="tekst">
+                7. Inndataenheter: Fancy ord for utstyr som tastatur og mus, som lar deg styre PC-en og skrive eller
+                klikke.
+            </p>
+            <p class="tekst">
+                8. Operativsystem (f.eks. Windows, macOS, Linux): Det programmet som styrer PC-en og lar deg kjøre andre
+                programmer.
+            </p>
+            <h1 class="miniOverskrift">SLIK KAN DU BYGGE DIN EGEN PC</h1>
+            <p class="tekst">
+                1. Finn et arbeidsområde: Velg et rent bord eller gulv uten noe statisk elektrisitet i nærheten (lurt å
+                unngå tepper). Finn fram alle delene: kabinett, hovedkort, prosessor, kjøler, minne (RAM), lagring (SSD
+                eller harddisk), strømforsyning (PSU), skjermkort (om du har det separat), kabler, skrutrekker og
+                eventuelle skruer som fulgte med kabinettet.
+            </p>
+            <p class="tekst">
+                2. Monter prosessoren: Nå som det er gjort åpne låsen på motherboardet CPU-sokkel (firkant sølv ting
+                tangen på midten av kortet). Ta ut prosessoren fra emballasjen, det er viktig at du er forsiktig, det
+                gjelder hovedsakelig med alle delene, legg den riktig vei ned i sokkelen (se etter de små pilene eller
+                hakkene som viser riktig retning). Lukk låsen, forsiktig.
+            </p>
+            <p class="tekst">
+                3. Fest kjøleren (vifte eller kjøleribbe): Hvis CPU-kjøleren har en egen festemekanisme, plasser den
+                over prosessoren og stram skruene eller klipsene. Sørg for at det er nok varmeledning (leder varmen vekk
+                fra CPU-en ) mellom prosessor og kjøler (bruk gjerne termisk putebit eller pasta som kom med PC-en).
+            </p>
+            <p class="tekst">
+                4. Sett inn minne (RAM): Finn RAM-sporene på hovedkortet (Det pleier å være fire lange spor). Åpne
+                klipsene i hver ende. Ta en RAM-stick, hold den slik at hakket på bunnkanten passer med hakket i sporet,
+                og trykk ned til klipsene klikker på plass. Gjør det samme med andre moduler om du har flere.
+            </p>
+            <p class="tekst">
+                5. Monter hovedkortet i kabinettet: Finn avstandsstifter (små metallskruer) som følger med kabinettet,
+                og skru dem på plass i hullene som stemmer med hovedkortet skruer. Plasser hovedkortet på
+                avstandsstiftene og fest med de skruene som fulgte med kabinettet, skru helt til at hovedkortet står
+                støtt.
+            </p>
+            <p class="tekst">
+                6. Sett inn lagringsenheter: Hvis du har en SSD med 2,5 format, skru den i en passende brakett eller
+                skuff. For M.2 SSDer (små kort), finn M.2-sporet på hovedkortet, skru løs skrue i enden, skyv inn SSD-en
+                skrått og trykk ned, deretter fest den med skruen.
+            </p>
+            <p class="tekst">
+                7. Monter skjermkortet: Finn PCIe-sporet på hovedkortet (Den som er tilsvarer med størrelsen på kortet).
+                Åpne braketten bak kabinettet og sett inn kortet i sporet til det klikker på plass. Skru fast metallet
+                på kabinettet slik at kortet sitter.
+            </p>
+            <p class="tekst">
+                8. Fest strømforsyningen: Plasser PSU-en i kabinettet eget rom (ofte nede bak), med viften vendt mot
+                ventilasjons-åpningen, skru den fast.
+            </p>
+            <p class="tekst">
+                9. Koble kabler:
+                Strøm til hovedkort: Finn 24-pinners kontakten fra PSU og koble den på hovedkortet. <br>
+                Strøm til CPU: Finn 4- eller 8-pinners kabel (merket CPU eller EPS) og koble den i prosessorens
+                strømkontakt på hovedkortet. <br>
+                Strøm til skjermkort: Hvis kortet trenger ekstra strøm, koble 6- eller 8-pinners PCIe-kabler fra PSU til
+                kortet. <br>
+                Strøm til lagring: Bruk SATA-kabler fra PSU (flate kabler) til 2,5 SSD eller harddisk, og koble også en
+                SATA-datakabel fra lagringsenheten til hovedkortet (se etter SATA-porter). <br>
+                Frontpanel og USB-kabler: Koble knapper og USBporter på kabinettet til de små pinnene nederst på
+                hovedkortet. Hver kabel er merket (f.eks. Power SW for av/på-knapp, USB for front-USB), og pinnene har
+                merking på hovedkortet. <br>
+            </p>
+            <p class="tekst">
+                10. Kontroller kabler og rydd opp: Titlen sier egentlig det meste. Sørg for at ingen kabler ligger i
+                veien for vifter eller blokkerer luftstrømmen. Bruk strips eller bånd for å samle kabler langs
+                kabinettets vegger.
+            </p>
+            <p class="tekst">
+                11. Lukk kabinettet og koble til eksterne enheter: Sett på sidepanelet, skru den fast. Koble til skjerm,
+                tastatur, mus og strømledning til PC-en.
+            </p>
+            <p class="tekst">
+                12. Slå på PC-en og installer operativsystem: Trykk på støm knappen. Gå inn i BIOS/UEFI (ofte ved å
+                trykke Delete eller F2), sjekk at alle deler blir gjenkjent (CPU, minne, lagring, skjermkort). Sett opp
+                oppstart fra USB eller DVD med operativsystemet, og følg instruksjonene/veiviseren for å installere
+                operativsystemet(Windows, Linux eller annet).
+            </p>
+            <p class="tekst">
+                13. Booom ferdig-ish. Etter installasjon av operativsystemet kan du installere drivere (programvare som
+                får maskinvaren til å fungere best mulig). Oppdater alt, boom klar for bruk.
+            </p>
+            <h1 class="miniOverskrift">RASPBERRY PI SCRATCH PROSJEKT</h1>
+            <p class="tekst">
+                Jeg brukte en Raspberry Pi til å lage en enkel animasjon med en Traffic HAT. Raspberry Pi er en liten
+                datamaskin som man ofte bruker til å lære programmering og elektronikk, i mitt tilfelle, tull. Den ser
+                ikke ut som en vanlig PC, men den kan gjøre mange av de samme tingene. Traffic HAT er et tillegg du kan
+                feste oppå Raspberry Pi. Det har små lys og knapper. Ved hjelp av koding kunne jeg få lysene til å
+                blinke i et mønster, og med koding mener jeg å jukse meg frem til målstreken, jeg brukte Scratch.
+                Scratch er et enkelt programmerings språk som passer for nybegynnere. I stedet for å skrive kode med
+                tekst, bruker man fargerike byggeklosser som man setter sammen. Hver kloss gjør noe, for eksempel får en
+                figur til å gå, snakke eller gjøre noe når du trykker på en tast. Akkurat Scratch hadde jeg masse
+                erfaring med allerede. Jeg gikk på en kode klubb når jeg var yngre, noe faren min signerte meg opp for.
+                Så med den kunnskapen kunne jeg lage ting som dette:
+            </p>
+            <div class="bildeContainerRow">
+                <div>
+                    <div class="BVContainer">
+                        <img src="Bilder/PI1Gif.gif">
+                    </div>
+                    <div class="BVContainer">
+                        <img src="Bilder/PI2Gif.gif">
+                    </div>
+                </div>
+            </div>
+            <div class="bildeContainerRow">
+                <div>
+                    <div class="BVContainer">
+                        <img src="Bilder/PI3Gif.gif">
+                    </div>
+                    <div class="BVContainer">
+                        <img src="Bilder/PI4Gif.gif">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="teknoWE.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1"
+                    id="pil1">
+                    <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">3</p>
+            <a href="teknoInternett.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

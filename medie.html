@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="medie.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">PROD. OG HISTORIEFORTELLING</h1>
+            <h3 class="tverrOverskrift">Tverrfaglig prosjekt</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="medie.html" selected>Hovedside</option>
+                    <option value="medieTic.html">Juleavslutning prosjektet</option>
+                    <option value="medieAfter.html">After Effect's og Photoshop</option>
+                    <option value="medieMotion.html">Stop-Motion</option>
+                    <option value="medieTverr.html">Blender og Unity</option>
+                    <option value="medieInteraktiv.html">Interaktiv historie</option>
+                    <option value="medieGodot.html">Godot</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">INNLEDELSE</h1>
+            </div>
+            <p class="tekst">
+                I starten av året syntes jeg at Prod. og historiefortelling var et krevende og vanskelig fag, og jeg
+                likte det ikke i det hele tatt. På min forrige skole hadde jeg valgt foto som valgfag, men fant raskt ut
+                at det ikke var noe for meg. Så da vårt første prosjekt i Prod. handlet om foto, visste jeg allerede at
+                det ikke ville være min greie.
+            </p>
+            <p class="tekst">
+                Men, etter en stund, begynte oppgavene etter hvert å dreie seg mer om video og bilderedigering, med
+                verktøy som After Effects, Photoshop og stop motion, et felt jeg synes er veldig interessant.
+            </p>
+            <p class="tekst">
+                Siden jeg var liten, har jeg brukt forskjellige redigeringsprogrammer, og to av favorittene mine har
+                vært PicsArt og CapCut. Jeg lagde ofte useriøse og tullete bilder av folk fra klassen, og noen ganske
+                rare bilder. En venn og jeg hadde også en slags konkurranse om å lage egne serier, eller i hvert fall
+                var det slik jeg tolket det. Seriene gikk ut på å få folk fra klassen til å fylle roller fra kjente
+                serier. Han lagde en versjon basert på The Kardashians, mens jeg lagde en parodi på Family Guy, som jeg
+                kalte Family House. Det var kanskje ikke så pent å se på, men det var akkurat det jeg likte med friheten, det å skape noe selv.
+            </p>
+            <p class="tekst">
+                Og nettopp dette er det jeg likte med Prod. Muligheten til å lage noe selv og føle en slags stolthet
+                over det. Det er en god følelse å se resultatet og vite at du har laget det helt på egen hånd.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="side">
+            <!-- <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1" id="pil1">
+                <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a> -->
+            <p class="sideTall">1</p>
+            <a href="medieTic.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

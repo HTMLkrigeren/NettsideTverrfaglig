@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="medie.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="menyContainer">
+        <div class="backgroundMeny"></div>
+        <div class="menyHeader">
+            <h1 class="menyIMA">1IMA</h1>
+        </div>
+        <div class="menyMain">
+            <a href="index.html" class="aMeny1">Hjem</a>
+            <a href="medie.html" class="aMeny2">Medie...</a>
+            <a href="prog.html" class="aMeny3">Prog...</a>
+            <a href="teknologi.html" class="aMeny4">Tekno...</a>
+            <a href="YFF.html" class="aMeny5">YFF</a>
+        </div>
+        <div class="menyFooter">
+            <a href="hjelp.html" class="menyHjelp">Hjelp!</a>
+            <a href="kontakt.html" class="menyKontakt">Kontakt</a>
+        </div>
+    </div>
+    <div class="meny">
+        <h1 class="IMA">1IMA</h1>
+    </div>
+    <header class="dropdownHeader">
+        <div class="dropdownContainer">
+            <h1 class="nettsideOverskrift">TVERRFAGLIG PROSJEKT - TEKNOLOGI & PROD</h1>
+            <h3 class="tverrOverskrift">Prod. Og historiefortelling</h3>
+            <div class="dropdownMeny">
+                <select id="valg" class="valg" onchange="endreSide()">
+                    <option value="medie.html">Hovedside</option>
+                    <option value="medieTic.html">Juleavslutning prosjektet</option>
+                    <option value="medieAfter.html">After Effect's og Photoshop</option>
+                    <option value="medieMotion.html">Stop-Motion</option>
+                    <option value="medieTverr.html" selected>Blender og Unity</option>
+                    <option value="medieInteraktiv.html">Interaktiv historie</option>
+                    <option value="medieGodot.html">Godot</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="Maininfo">
+        <div class="infoContainer">
+            <div class="hovedContainerHeader">
+                <h1 class="overskrift">BLENDER OG UNITY</h1>
+            </div>
+
+            <h1 class="miniOverskrift">HVA ER BLENDER, OG HVA ER UNITY?</h1>
+            <p class="tekst">
+                <strong>Blender:</strong><br>
+                Blender er et gratis og åpen kildekode 3D-program. Du bruker det til å lage 3D-modeller, animasjoner,
+                spillgrafikk, videoer og av og til hele filmer.
+            </p>
+            <p class="tekst">
+                <strong>Unity:</strong><br>
+                Unity er en populær spillmotor som brukes til å lage 2D og 3D-spill, apper og VR/AR opplevelser. Den er
+                vanlig både i hobbyprosjekter og i store kommersielle spill.
+            </p>
+
+            <h1 class="miniOverskrift">TVERRFAGLIG PROSJEKT: VR-KINOSAL</h1>
+            <p class="tekst">
+                Jeg brukte mye av disse to programmene da jeg designet og planla min egen VR-kinosal. Vi hadde et
+                tverrfaglig prosjekt i Prod. Og historiefortelling og Teknologiforståelse, der vi skulle lage noe
+                innen ett av disse programmfagene.
+                Jeg valgte en VR-kinosal på grunn av at det var et eksempler på prestasjon fra, en prestasjon med eksempler.
+                Heldigvis hadde jeg brukt mye Blender i sommerferien for å prøve å lage et skrekkspill, så jeg hadde litt
+                erfaring innenfor akkurat det. Men da det kom til Unity, var på helt nytt territorium.
+            </p>
+
+            <h1 class="miniOverskrift">HVA SOM TRENGERS</h1>
+            <p class="tekst">
+                Å lage en VR-kinosal er egentlig ikke superkomplisert. Det er bare en sal, en sal full av veldig mange
+                stoler. Så det viktigste var å lage kinostoler som så bra ut og som var optimalisert nok til å fungere i
+                VR.
+            </p>
+
+            <h1 class="miniOverskrift">MATERIALER</h1>
+            <p class="tekst">
+                Jeg har aldri vært flink på materialer, det er komplisert å lage egne materialer fra bunnen av. Derfor
+                brukte jeg mest veiledninger for å sette opp materialene mine:
+            </p>
+            <ul>
+                <li>
+                    <strong>Sofapute-materiale:</strong><br>
+                    <a href="https://www.youtube.com/watch?v=xSur_NeBbrw" target="_blank">
+                        YouTube: Sofapute-materiale</a>
+                </li>
+                <li>
+                    <strong>Optimalisert sofapute-materiale:</strong><br>
+                    <a href="https://www.youtube.com/watch?v=In9V4-ih16o" target="_blank">
+                        YouTube: Optimalisert sofapute</a>
+                </li>
+                <li>
+                    <strong>Armlener-tre-tekstur:</strong><br>
+                    <a href="https://www.youtube.com/watch?v=OZCGFrLIu4M" target="_blank">
+                        YouTube: Tre-tekstur for armlener</a>
+                </li>
+                <li>
+                    <strong>Sofastol-materiale:</strong><br>
+                    <a href="https://www.youtube.com/watch?v=gFIE9LmpzZ0" target="_blank">
+                        YouTube: Materiale for sofastol</a>
+                </li>
+            </ul>
+
+            <h1 class="miniOverskrift">OPTIMALISERING FOR YTELSE</h1>
+            <p class="tekst">
+                Jeg vil ikke si at prosjektet var veldig vanskelig, det som var utfordrende, var å få Blender og Unity
+                til å snakke sammen:
+            </p>
+            <div class="BVContainer">
+                <img src="Bilder/BlenderUnity.png">
+            </div>
+            <p class="tekst">
+                På bilde prøver jeg å vise hvordan Blender bruker det som heter Principled BSDF, en shader løsning som
+                knytter materialer til modellen. Hvis du lurer på hva mesh og shaders er:
+            </p>
+            <ul>
+                <li>
+                    <strong>Mesh:</strong><br>
+                    <p class="tekst">
+                        En mesh er den grunnleggende geometrien for 3D-objekter. Den består av punkter (vertices),
+                        linjer mellom punktene (edges) og flater (faces). Ved å flytte på disse elementene former du
+                        modellen, alt fra enkle kuber til komplekse figurer. Du kan også bruke fysikk og simulatorer for
+                        å gjøre modellene mer realistiske.
+                    </p>
+                </li>
+                <li>
+                    <strong>Shader:</strong><br>
+                    <p class="tekst">
+                        En shader, også kalt materiale, bestemmer hvordan overflaten på en mesh ser ut. I Blender bygger
+                        man shaders med et nodenettverk i Shader Editor, der du kan koble sammen teksturer, farger og
+                        refleksjonsinnstillinger.
+                    </p>
+                </li>
+            </ul>
+            <p class="tekst">
+                <span style="font-weight: bold;">Stort problem</span> Unity kan ikke lese Blender sitt shading system, så den registrerer alt du har laget som ingen tekstur
+                og viser det som blank hvit flate. Det er ikke særlig opptimalt, fordi sofastolene da blir helt hvite, som om de
+                er laget av snø.
+            </p>
+            <p class="tekst">
+                Heldigvis er det en enkel løsning. Selv om Unity ikke støtter alle Blender shaderne, forstår den
+                Principled BSDF. BSDF har mange av de grunnleggende prinsippene fra shaderne innebygd, blant annet
+                farger. På den måten reddet jeg prosjektet ved å bare skifte fargen til noe som passet. Det var ikke
+                veldig lekkert, men langt bedre enn en gørr kjedelige hvite sofa stoler.
+            </p>
+
+            <h1 class="miniOverskrift">UNITY VR/AR</h1>
+            <p class="tekst">
+                Da jeg skulle få VR-funksjonen til å fungere, var jeg på nytt og ukjent terreng. Jeg har aldri brukt
+                Unity før, bare en annen spillmotor kalt Roblox Studio. Det var veldig komplisert, og jeg visste ikke
+                helt hva jeg gjorde. Jeg vet fortsatt ikke helt hva jeg gjorde, men det fungerer nå. Oppsettet av VR er
+                egentlig ikke så komplisert, ifølge mine steg burde det gå slik:
+            </p>
+            <ul>
+                <li>Lage et nytt prosjekt i Unity</li>
+                <li>Prøve å forstå det grunnleggende</li>
+                <li>Importere Blender prosjektet inn i Unity</li>
+                <li>Fikse meshene som havnet snudd og innvendig</li>
+                <li>Justere størrelsen på kinosalen</li>
+                <li>Legge inn kamera, finne ut hva XR er, og importere XR i kameraet</li>
+                <li>BOOM, VR</li>
+                <li>Koble til headsettene, prosjektet krasjet og slettet seg selv</li>
+                <li>Gjøre alt på nytt, nå på hjemme-PC-en</li>
+                <li>BOOM, VR fungerer endelig</li>
+            </ul>
+
+            <h1 class="miniOverskrift">RESULTAT</h1>
+            <div class="BVContainer">
+                <img src="Bilder/vrkinoreal.gif">
+            </div>
+            <p class="tekst">
+                Jeg er veldig fornøyd med hvordan dette prsojektet endte opp, jeg hadde mange flere planer som om at skjermen viser noe annet en bare hvit, men dette holder i massevis mener jeg.
+            </p>
+            
+        </div>
+    </main>
+
+    <footer>
+        <!-- <div class="hjelpContainer">
+            <a href="hjelp.html">Hjelp!</a>
+        </div> -->
+        <div class="side">
+            <a href="medieMotion.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil1"
+                    id="pil1">
+                    <path d="M18 6h2v12h-2zm-8 12v-5h6v-2h-6V6l-6 6z" />
+                </svg>
+            </a>
+            <p class="sideTall">5</p>
+            <a href="medieInteraktiv.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" class="pil2"
+                    id="pil2">
+                    <path d="M4 6h2v12H4zm10 5H8v2h6v5l6-6-6-6z" />
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
